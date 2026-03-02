@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo Stivale dei Sapori</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+            <h1 id="restaurant-name">Lo Stivale dei Sapori</h1>
+            <p id="season-year">Autumn 2025</p>
+        </header>
+        
+        <nav class="menu-nav">
+            <button class="nav-btn active" data-page="cover">Cover & Info</button>
+            <button class="nav-btn" data-page="taglieri">I Taglieri</button>
+            <button class="nav-btn" data-page="special">Special Platters</button>
+            <button class="nav-btn" data-page="tartare">Le Tartare & La Zizzona</button>
+            <button class="nav-btn" data-page="bruschette">Le Bruschette</button>
+            <button class="nav-btn" data-page="primi">I Primi Piatti</button>
+            <button class="nav-btn" data-page="grigliate">Le Grigliate</button>
+            <button class="nav-btn" data-page="contorni">I Contorni</button>
+            <button class="nav-btn" data-page="baby">Baby Menu</button>
+        </nav>
+        
+        <main class="menu-container">
+            <!-- Cover & Info Page -->
+            <section id="cover" class="menu-section active">
+                <div class="cover-content">
+                    <h2 id="cover-title">Cover & Info</h2>
+                    <p id="wait-message" class="wait-text">✨ A wait that matters With us, the wait is never empty. Every dish is prepared with care using fresh and selected raw materials. The time you wait is filled with our commitment to offering you an authentic experience.</p>
+                    <div class="cover-charge">
+                        <p id="cover-charge-text">Cover charge (Coperto): €2</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- I Taglieri Page -->
+            <section id="taglieri" class="menu-section">
+                <h2 id="taglieri-title">I Taglieri (Platters)</h2>
+                <table class="menu-table">
+                    <thead>
+                        <tr>
+                            <th id="item-header">Item</th>
+                            <th id="price-header">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong id="calabria-docet-name">Calabria Docet (for 2 people)</strong><br>
+                                <span id="calabria-docet-desc">sweet soppressata, sweet sausage, spicy sausage, Calabrian capocollo, Calabrian fillet, Calabrian pancetta, aged Pecorino d'Angiò, Gran Riserva Piacenza Pecorino, caciocavallo cheese, artisanal jams, artisanal acacia honey</span>
+                            </td>
+                            <td>€32</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong id="piccola-calabria-name">Tagliere La piccola Calabria</strong><br>
+                                <span id="piccola-calabria-desc">sweet soppressata, sweet sausage, Calabrian capocollo, Calabrian fillet, Calabrian pancetta, aged Pecorino d'Angiò, caciocavallo cheese, artisanal orange marmalade, artisanal acacia honey</span>
+                            </td>
+                            <td>€16</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong id="vegetariano-name">Vegetariano</strong><br>
+                                <span id="vegetariano-desc">Beetroot carpaccio, small friselle bread, Calabrian vegetables in oil, crudités and cheeses according to seasonal availability</span>
+                            </td>
+                            <td>€15</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <!-- Special Platters Page -->
+            <section id="special" class="menu-section">
+                <h2 id="special-title">Special Platters</h2>
+                <table class="menu-table">
+                    <thead>
+                        <tr>
+                            <th id="item-header2">Item</th>
+                            <th id="price-header2">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong id="stivale-name">Lo Stivale dei Sapori (for 2 people)</strong><br>
+                                <span id="stivale-desc">24-month Parma ham, Martina Franca capocollo, mortadella with almonds and pistachio, aged Pecorino d'Angiò, Gran Riserva Piacenza Pecorino, caciocavallo cheese, artisanal jams, artisanal acacia honey</span>
+                            </td>
+                            <td>€28</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong id="trilogi-name">Trilogi di Crudo (for 2 people)</strong><br>
+                                <span id="trilogi-desc">Culatello di Zibello DOP, Black Pig cured ham, Cinta Senese cured ham with burrata cheese</span>
+                            </td>
+                            <td>€30</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <!-- Le Tartare & La Zizzona Page -->
+            <section id="tartare" class="menu-section">
+                <h2 id="tartare-title">Le Tartare (Tartare Dishes)</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h3 id="tartare-bovino-name">Tartare di Bovino brasiliano e Tartufo umbro</h3>
+                        <p id="tartare-bovino-desc">Brazilian Beef tartare with mixed greens and Umbrian truffle</p>
+                        <p class="price">€22</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 id="tartare-tonno-name">Tartare di tonno</h3>
+                        <p id="tartare-tonno-desc">Tuna tartare with mixed greens</p>
+                        <p class="price">€23</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 id="carpaccio-name">Carpaccio di Black Angus</h3>
+                        <p id="carpaccio-desc">Smoked Black Angus, truffle oil, premium Umbrian truffle, arugula</p>
+                        <p class="price">€20</p>
+                    </div>
+                </div>
+                
+                <h2 id="zizzona-title">La Zizzona</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h3 id="zizzona-name">La Zizzona di Battipaglia</h3>
+                        <p id="zizzona-desc">Large Battipaglia buffalo mozzarella with Calabrian capocollo</p>
+                        <p class="price">€30</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Le Bruschette Page -->
+            <section id="bruschette" class="menu-section">
+                <h2 id="bruschette-title">Le Bruschette (on Altamura bread)</h2>
+                <table class="menu-table">
+                    <thead>
+                        <tr>
+                            <th id="item-header3">Item</th>
+                            <th id="price-header3">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong id="caciocavallo-name">Bruschette con caciocavallo</strong><br>
+                                <span id="caciocavallo-desc">Altamura bread and Silano caciocavallo cheese</span>
+                            </td>
+                            <td>€10</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong id="lardo-name">Bruschette con Lardo di Patanegra</strong><br>
+                                <span id="lardo-desc">Altamura bread and Patanegra lard</span>
+                            </td>
+                            <td>€10</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong id="pomodori-name">Bruschette con pomodori</strong><br>
+                                <span id="pomodori-desc">Altamura bread, cherry tomatoes, extra virgin olive oil</span>
+                            </td>
+                            <td>€10</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong id="calabrese-name">Bruschetta Calabrese</strong><br>
+                                <span id="calabrese-desc">Altamura bread with Calabrian-style cod, potatoes and olives</span>
+                            </td>
+                            <td>€15</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong id="stivale-bruschetta-name">Bruschetta Lo Stivale</strong><br>
+                                <span id="stivale-bruschetta-desc">Altamura bread, Cantabrian anchovy fillets, single-serving butter squares</span>
+                            </td>
+                            <td>€15</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <!-- I Primi Piatti Page -->
+            <section id="primi" class="menu-section">
+                <h2 id="primi-title">I Primi Piatti (First Courses)</h2>
+                <table class="menu-table">
+                    <thead>
+                        <tr>
+                            <th id="item-header4">Item</th>
+                            <th id="price-header4">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong id="bacco-name">Spaghetto Bacco</strong><br>
+                                <span id="bacco-desc">spaghetti with Calabrian wine and baked olives</span>
+                            </td>
+                            <td>€13</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong id="maccheroni-name">Maccheroni, salsiccia calabrese e porcini della Sila</strong><br>
+                                <span id="maccheroni-desc">maccheroni, fresh Calabrian sausage, Sila porcini mushrooms, extra virgin olive oil</span>
+                            </td>
+                            <td>€15</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong id="orecchiette-name">Orecchiette con cime di rapa</strong><br>
+                                <span id="orecchiette-desc">orecchiette pasta, turnip greens, extra virgin olive oil, garlic and breadcrumbs</span>
+                            </td>
+                            <td>€12</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <!-- Le Grigliate Page -->
+            <section id="grigliate" class="menu-section">
+                <h2 id="grigliate-title">Le Grigliate (Grilled Dishes)</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h3 id="calabria-griglia-name">Calabria alla griglia</h3>
+                        <p id="calabria-griglia-desc">sausage, hamburger, bombette, black pork ribs</p>
+                        <p class="price">€22</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 id="caciocavallo-griglia-name">Caciocavallo alla griglia</h3>
+                        <p id="caciocavallo-griglia-desc">grilled caciocavallo cheese, mixed greens and truffle oil</p>
+                        <p class="price">€13</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 id="fiorentina-name">Fiorentina</h3>
+                        <p id="fiorentina-desc">weight between 950g and 1250g</p>
+                        <p class="price">€76 / Kg</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 id="entrecote-name">Entrecôte</h3>
+                        <p id="entrecote-desc">weight between 250g and 350g</p>
+                        <p class="price">€30</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 id="tomahawk-name">Tomahawk</h3>
+                        <p class="price">€76 / kg</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 id="wagyu-name">Wagyu Kobe</h3>
+                        <p class="price">€80 / 100g</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 id="picagna-name">Picagna</h3>
+                        <p id="picagna-desc">weight between 290g and 330g</p>
+                        <p class="price">€28</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 id="spigola-name">Spigola al forno</h3>
+                        <p id="spigola-desc">Baked Sea Bass</p>
+                        <p class="price">€20</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- I Contorni Page -->
+            <section id="contorni" class="menu-section">
+                <h2 id="contorni-title">I Contorni (Side Dishes)</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h3 id="insalata-name">Insalata mista</h3>
+                        <p id="insalata-desc">lettuce, radicchio, arugula, cherry tomatoes, carrots, meloncelles/cucumber-melons</p>
+                        <p class="price">€5</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 id="patate-forno-name">Patate al forno</h3>
+                        <p id="patate-forno-desc">roasted potatoes and rosemary</p>
+                        <p class="price">€5</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 id="verdure-name">Verdure di stagione</h3>
+                        <p id="verdure-desc">stewed chicory or sautéed turnip greens</p>
+                        <p class="price">€6</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 id="patate-mblacchiuse-name">Patate “mblacchiuse”</h3>
+                        <p id="patate-mblacchiuse-desc">fried peppers and potatoes - traditional style</p>
+                        <p class="price">€6</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Baby Menu Page -->
+            <section id="baby" class="menu-section">
+                <h2 id="baby-title">Baby Menu</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h3 id="pasta-sugo-name">Pasta al sugo</h3>
+                        <p id="pasta-sugo-desc">orecchiette pasta with tomato sauce</p>
+                        <p class="price">€5</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 id="baby-hamburger-name">Baby Hamburger</h3>
+                        <p id="baby-hamburger-desc">chicken burger with a side of fries</p>
+                        <p class="price">€7</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
