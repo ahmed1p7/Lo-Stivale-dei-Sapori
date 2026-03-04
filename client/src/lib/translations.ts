@@ -251,11 +251,11 @@ export const translations = {
     // I Taglieri
     "taglieri-title": "I Taglieri",
     "calabria-docet": "Calabria Docet (per 2 persone)",
-    "calabria-docet-desc": "soppressata dolce, salsiccia dolce, salsiccia piccante, capocollo calabrese, filetto calabrese, pancetta calabrese, Pecorino d'Angiò stagionato, Pecorino Piacenza Gran Riserva, caciocavallo, confetture artigianali, miele di acacia artigianale",
+    "calabria-docet-desc": "Soppressata dolce, salsiccia dolce, salsiccia piccante, capocollo calabrese, filetto calabrese, pancetta calabrese, Pecorino d'Angiò stagionato, Pecorino Piacenza Gran Riserva, caciocavallo, confetture artigianali, miele di acacia artigianale",
     "piccola-calabria": "Tagliere La piccola Calabria",
-    "piccola-calabria-desc": "soppressata dolce, salsiccia dolce, capocollo calabrese, filetto calabrese, pancetta calabrese, Pecorino d'Angiò stagionato, caciocavallo, marmellata di arance artigianale, miele di acacia artigianale",
+    "piccola-calabria-desc": "Soppressata dolce, salsiccia dolce, capocollo calabrese, filetto calabrese, pancetta calabrese, Pecorino d'Angiò stagionato, caciocavallo, marmellata di arance artigianale, miele di acacia artigianale",
     "vegetariano": "Vegetariano",
-    "vegetariano-desc": "Carpaccio di barbabietola, friselline, verdure calabresi sott'olio, crudité e formaggi secondo disponibilità stagionale",
+    "vegetariano-desc": "Carpaccio di barbabietola, piccoli friselli, verdure calabresi sott'olio, cruditè e formaggi secondo disponibilità stagionale",
     
     // Special Platters
     "special-title": "Taglieri Speciali",
@@ -267,7 +267,7 @@ export const translations = {
     // Tartare
     "tartare-title": "Le Tartare",
     "tartare-bovino": "Tartare di Bovino brasiliano e Tartufo umbro",
-    "tartare-bovino-desc": "Tartare di Bovino brasiliano con misticanza e tartufo umbro",
+    "tartare-bovino-desc": "Fresche e delicate tartare di carne brasiliana, esaltate dai migliori ingredienti grezzi. O piatto firmato con mozzarella di bufala di pregio e sapori tradizionali della Calabria",
     "tartare-tonno": "Tartare di tonno",
     "tartare-tonno-desc": "Tartare di tonno con misticanza",
     "carpaccio": "Carpaccio di Black Angus",
