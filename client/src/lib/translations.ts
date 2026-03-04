@@ -217,8 +217,117 @@ export const translations = {
     // Price
     "price": "€",
   },
+  it: {
+    // Header
+    "restaurant-name": "Lo Stivale dei Sapori",
+    "season-year": "Autunno 2025",
+    "cover-charge": "Coperto: €2",
+    
+    // Navigation
+    "nav-cover": "Copertina & Info",
+    "nav-taglieri": "I Taglieri",
+    "nav-special": "Taglieri Speciali",
+    "nav-tartare": "Tartare & Zizzona",
+    "nav-bruschette": "Bruschette",
+    "nav-primi": "Primi Piatti",
+    "nav-grigliate": "Grigliate",
+    "nav-contorni": "Contorni",
+    "nav-baby": "Menu Baby",
+    
+    // Cover & Info
+    "cover-title": "Copertina & Info",
+    "wait-message": "✨ Un'attesa che vale. Da noi l'attesa non è mai vuota. Ogni piatto è preparato con cura utilizzando materie prime fresche e selezionate. Il tempo che aspetti è riempito dal nostro impegno per offrirti un'esperienza autentica.",
+    
+    // I Taglieri
+    "taglieri-title": "I Taglieri",
+    "calabria-docet": "Calabria Docet (per 2 persone)",
+    "calabria-docet-desc": "soppressata dolce, salsiccia dolce, salsiccia piccante, capocollo calabrese, filetto calabrese, pancetta calabrese, Pecorino d'Angiò stagionato, Pecorino Piacenza Gran Riserva, caciocavallo, confetture artigianali, miele di acacia artigianale",
+    "piccola-calabria": "Tagliere La piccola Calabria",
+    "piccola-calabria-desc": "soppressata dolce, salsiccia dolce, capocollo calabrese, filetto calabrese, pancetta calabrese, Pecorino d'Angiò stagionato, caciocavallo, marmellata di arance artigianale, miele di acacia artigianale",
+    "vegetariano": "Vegetariano",
+    "vegetariano-desc": "Carpaccio di barbabietola, friselline, verdure calabresi sott'olio, crudité e formaggi secondo disponibilità stagionale",
+    
+    // Special Platters
+    "special-title": "Taglieri Speciali",
+    "stivale": "Lo Stivale dei Sapori (per 2 persone)",
+    "stivale-desc": "Prosciutto di Parma 24 mesi, capocollo di Martina Franca, mortadella con mandorle e pistacchio, Pecorino d'Angiò stagionato, Pecorino Piacenza Gran Riserva, caciocavallo, confetture artigianali, miele di acacia artigianale",
+    "trilogi": "Trilogi di Crudo (per 2 persone)",
+    "trilogi-desc": "Culatello di Zibello DOP, Prosciutto di Maiale Nero, Prosciutto di Cinta Senese con burrata",
+    
+    // Tartare
+    "tartare-title": "Le Tartare",
+    "tartare-bovino": "Tartare di Bovino brasiliano e Tartufo umbro",
+    "tartare-bovino-desc": "Tartare di Bovino brasiliano con misticanza e tartufo umbro",
+    "tartare-tonno": "Tartare di tonno",
+    "tartare-tonno-desc": "Tartare di tonno con misticanza",
+    "carpaccio": "Carpaccio di Black Angus",
+    "carpaccio-desc": "Black Angus affumicato, olio tartufato, tartufo umbro pregiato, rucola",
+    "zizzona-title": "La Zizzona",
+    "zizzona": "La Zizzona di Battipaglia",
+    "zizzona-desc": "Zizzona di bufala di Battipaglia con capocollo calabrese",
+    
+    // Bruschette
+    "bruschette-title": "Le Bruschette (su pane di Altamura)",
+    "caciocavallo": "Bruschette con caciocavallo",
+    "caciocavallo-desc": "Pane di Altamura e caciocavallo silano",
+    "lardo": "Bruschette con Lardo di Patanegra",
+    "lardo-desc": "Pane di Altamura e lardo di Patanegra",
+    "pomodori": "Bruschette con pomodori",
+    "pomodori-desc": "Pane di Altamura, pomodorini, olio extravergine di oliva",
+    "calabrese": "Bruschetta Calabrese",
+    "calabrese-desc": "Pane di Altamura con baccalà alla calabrese, patate e olive",
+    "stivale-bruschetta": "Bruschetta Lo Stivale",
+    "stivale-bruschetta-desc": "Pane di Altamura, filetti di alici del Cantabrico, quadretti di burro monoporzione",
+    
+    // Primi Piatti
+    "primi-title": "I Primi Piatti",
+    "bacco": "Spaghetto Bacco",
+    "bacco-desc": "spaghetto al vino calabrese e olive infornate",
+    "maccheroni": "Maccheroni, salsiccia calabrese e porcini della Sila",
+    "maccheroni-desc": "maccheroni, salsiccia calabrese fresca, funghi porcini della Sila, olio extravergine di oliva",
+    "orecchiette": "Orecchiette con cime di rapa",
+    "orecchiette-desc": "orecchiette, cime di rapa, olio extravergine di oliva, aglio e mollica di pane",
+    
+    // Grigliate
+    "grigliate-title": "Le Grigliate",
+    "calabria-griglia": "Calabria alla griglia",
+    "calabria-griglia-desc": "salsiccia, hamburger, bombette, costine di maiale nero",
+    "caciocavallo-griglia": "Caciocavallo alla griglia",
+    "caciocavallo-griglia-desc": "caciocavallo alla piastra, misticanza e olio tartufato",
+    "fiorentina": "Fiorentina",
+    "fiorentina-desc": "peso tra 950g e 1250g",
+    "entrecote": "Entrecôte",
+    "entrecote-desc": "peso tra 250g e 350g",
+    "tomahawk": "Tomahawk",
+    "wagyu": "Wagyu Kobe",
+    "picagna": "Picagna",
+    "picagna-desc": "peso tra 290g e 330g",
+    "spigola": "Spigola al forno",
+    "spigola-desc": "Spigola al forno",
+    
+    // Contorni
+    "contorni-title": "I Contorni",
+    "insalata": "Insalata mista",
+    "insalata-desc": "lattuga, radicchio, rucola, pomodorini, carote, meloncelles",
+    "patate-forno": "Patate al forno",
+    "patate-forno-desc": "patate al forno e rosmarino",
+    "verdure": "Verdure di stagione",
+    "verdure-desc": "cicoria ripassata o cime di rapa saltate",
+    "patate-mblacchiuse": "Patate \"mblacchiuse\"",
+    "patate-mblacchiuse-desc": "peperoni e patate fritte - stile tradizionale",
+    
+    // Baby Menu
+    "baby-title": "Menu Baby",
+    "pasta-sugo": "Pasta al sugo",
+    "pasta-sugo-desc": "orecchiette al pomodoro",
+    "baby-hamburger": "Baby Hamburger",
+    "baby-hamburger-desc": "hamburger di pollo con contorno di patatine",
+    
+    // Price
+    "price": "€",
+  }
 };
 
-export function t(key: string, language: 'en' | 'ar'): string {
+export function t(key: string, language: 'en' | 'ar' | 'it'): string {
   return translations[language][key as keyof typeof translations['en']] || key;
 }

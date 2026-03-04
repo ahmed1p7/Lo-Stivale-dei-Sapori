@@ -1,12 +1,13 @@
 import React, { createContext, useContext, useState } from 'react';
 
-type Language = 'en' | 'ar';
+type Language = 'en' | 'ar' | 'it';
 
 interface LanguageContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
   isArabic: boolean;
   isEnglish: boolean;
+  isItalian: boolean;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -21,6 +22,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
         setLanguage,
         isArabic: language === 'ar',
         isEnglish: language === 'en',
+        isItalian: language === 'it',
       }}
     >
       {children}

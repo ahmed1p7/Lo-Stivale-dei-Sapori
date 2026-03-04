@@ -22,6 +22,14 @@ export default function Header() {
           <div className="flex items-center gap-4">
             <div className="flex gap-2">
               <Button
+                variant={language === 'it' ? 'default' : 'outline'}
+                size="sm"
+                onClick={() => setLanguage('it')}
+                className="font-semibold"
+              >
+                IT
+              </Button>
+              <Button
                 variant={language === 'en' ? 'default' : 'outline'}
                 size="sm"
                 onClick={() => setLanguage('en')}
