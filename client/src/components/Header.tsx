@@ -45,6 +45,14 @@ export default function Header() {
               >
                 AR
               </Button>
+              <Button
+                variant={language === 'fr' ? 'default' : 'outline'}
+                size="sm"
+                onClick={() => setLanguage('fr')}
+                className="font-semibold"
+              >
+                FR
+              </Button>
             </div>
           </div>
         </div>
