@@ -37,9 +37,7 @@ export default function CoverPage() {
 
           <div className="pt-4 border-t border-accent/20">
             <p className="text-sm text-muted-foreground italic" style={{ fontFamily: 'Lato, sans-serif' }}>
-              {language === 'en'
-                ? 'Experience authentic Italian cuisine prepared with passion and the finest ingredients.'
-                : 'استمتع بأصيل الطعام الإيطالي المحضر بشغف وأفضل المكونات.'}
+              {t('authentic-experience', language)}
             </p>
           </div>
         </div>

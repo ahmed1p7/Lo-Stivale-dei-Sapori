@@ -22,6 +22,10 @@ const zizzonaItems = [
     key: 'zizzona',
     price: '€30',
   },
+  {
+    key: 'zizzona-1k',
+    price: '€1000',
+  },
 ];
 
 export default function TartarePage() {
