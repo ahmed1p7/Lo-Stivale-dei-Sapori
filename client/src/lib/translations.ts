@@ -325,9 +325,118 @@ export const translations = {
     
     // Price
     "price": "€",
+  },
+  fr: {
+    // Header
+    "restaurant-name": "Lo Stivale dei Sapori",
+    "season-year": "Automne 2025",
+    "cover-charge": "Couvert (Coperto): 2 €",
+    
+    // Navigation
+    "nav-cover": "Couverture & Infos",
+    "nav-taglieri": "Les Plateaux",
+    "nav-special": "Plateaux Spéciaux",
+    "nav-tartare": "Tartares & Zizzona",
+    "nav-bruschette": "Bruschettas",
+    "nav-primi": "Plats Principaux",
+    "nav-grigliate": "Grillades",
+    "nav-contorni": "Accompagnements",
+    "nav-baby": "Menu Enfant",
+    
+    // Cover & Info
+    "cover-title": "Couverture & Infos",
+    "wait-message": "✨ Une attente qui vaut la peine. Chez nous, l'attente n'est jamais vide. Chaque plat est préparé avec soin en utilisant des matières premières fraîches et sélectionnées. Le temps que vous passez à attendre est comblé par notre engagement à vous offrir une expérience authentique.",
+    
+    // I Taglieri
+    "taglieri-title": "Les Plateaux (Plateaux)",
+    "calabria-docet": "Calabria Docet (pour 2 personnes)",
+    "calabria-docet-desc": "sopressata douce, saucisse douce, saucisse épicée, coppa calabraise, filet calabrais, pancetta calabraise, Pecorino d'Angiò vieilli, Pecorino Piacenza Gran Riserva, fromage caciocavallo, confitures artisanales, miel d'acacia artisanal",
+    "piccola-calabria": "Taglière La piccola Calabria",
+    "piccola-calabria-desc": "sopressata douce, saucisse douce, coppa calabraise, filet calabrais, pancetta calabraise, Pecorino d'Angiò vieilli, fromage caciocavallo, confiture d'orange artisanale, miel d'acacia artisanal",
+    "vegetariano": "Végétarien",
+    "vegetariano-desc": "carpaccio de betterave, petites friselles, légumes calabrais à l'huile, crudités et fromages selon la disponibilité saisonnière",
+    
+    // Special Platters
+    "special-title": "Plateaux Spéciaux",
+    "stivale": "Lo Stivale dei Sapori (pour 2 personnes)",
+    "stivale-desc": "jambon de Parme 24 mois, coppa Martina Franca, mortadelle aux amandes et pistaches, Pecorino d'Angiò vieilli, Pecorino Piacenza Gran Riserva, fromage caciocavallo, confitures artisanales, miel d'acacia artisanal",
+    "trilogi": "Trilogie de Cru (pour 2 personnes)",
+    "trilogi-desc": "culatello di Zibello DOP, jambon cru de cochon noir, jambon cru de Cinta Senese avec burrata",
+    
+    // Tartare
+    "tartare-title": "Les Tartares",
+    "tartare-bovino": "Tartare de boeuf brésilien et truffe ombrienne",
+    "tartare-bovino-desc": "tartare de boeuf brésilien avec mélange de jeunes pousses et truffe ombrienne",
+    "tartare-tonno": "Tartare de thon",
+    "tartare-tonno-desc": "tartare de thon avec mélange de jeunes pousses",
+    "carpaccio": "Carpaccio de Black Angus",
+    "carpaccio-desc": "Black Angus fumé, huile de truffe, truffe ombrienne premium, roquette",
+    "zizzona-title": "La Zizzona",
+    "zizzona": "La Zizzona de Battipaglia",
+    "zizzona-desc": "grande mozzarella de bufflonne de Battipaglia avec coppa calabraise",
+    
+    // Bruschette
+    "bruschette-title": "Les Bruschettas (sur pain Altamura)",
+    "caciocavallo": "Bruschetta au caciocavallo",
+    "caciocavallo-desc": "pain Altamura et fromage caciocavallo Silano",
+    "lardo": "Bruschetta au lardo de Patanegra",
+    "lardo-desc": "pain Altamura et lardo de Patanegra",
+    "pomodori": "Bruschetta aux tomates",
+    "pomodori-desc": "pain Altamura, tomates cerises, huile d'olive vierge extra",
+    "calabrese": "Bruschetta Calabraise",
+    "calabrese-desc": "pain Altamura avec morue à la calabraise, pommes de terre et olives",
+    "stivale-bruschetta": "Bruschetta Lo Stivale",
+    "stivale-bruschetta-desc": "pain Altamura, filets d'anchois du Cantabrique, carrés de beurre individuels",
+    
+    // Primi Piatti
+    "primi-title": "Les Plats Principaux",
+    "bacco": "Spaghetto Bacco",
+    "bacco-desc": "spaghetti au vin calabrais et olives rôties",
+    "maccheroni": "Maccheronis, saucisse calabraise et cèpes de la Sila",
+    "maccheroni-desc": "maccheronis, saucisse calabraise fraîche, cèpes de la Sila, huile d'olive vierge extra",
+    "orecchiette": "Orecchiettes aux cimes de rape",
+    "orecchiette-desc": "pâtes orecchiettes, cimes de rape, huile d'olive vierge extra, ail et chapelure",
+    
+    // Grigliate
+    "grigliate-title": "Les Grillades",
+    "calabria-griglia": "Calabre grillée",
+    "calabria-griglia-desc": "saucisses, hamburger, bombettes, côtes de porc noir",
+    "caciocavallo-griglia": "Caciocavallo grillé",
+    "caciocavallo-griglia-desc": "fromage caciocavallo grillé, mélange de jeunes pousses et huile de truffe",
+    "fiorentina": "Florentine",
+    "fiorentina-desc": "poids entre 950g et 1250g",
+    "entrecote": "Entrecôte",
+    "entrecote-desc": "poids entre 250g et 350g",
+    "tomahawk": "Tomahawk",
+    "wagyu": "Wagyu Kobe",
+    "picagna": "Picanha",
+    "picagna-desc": "poids entre 290g et 330g",
+    "spigola": "Loup de mer au four",
+    "spigola-desc": "Loup de mer au four",
+    
+    // Contorni
+    "contorni-title": "Les Accompagnements",
+    "insalata": "Salade mixte",
+    "insalata-desc": "laitue, rouge, roquette, tomates cerises, carottes, meloncelles/concombres-melons",
+    "patate-forno": "Pommes de terre au four",
+    "patate-forno-desc": "pommes de terre rôties et romarin",
+    "verdure": "Légumes de saison",
+    "verdure-desc": "chicorée braisée ou cimes de rape sautées",
+    "patate-mblacchiuse": "Pommes de terre \"mblacchiuse\"",
+    "patate-mblacchiuse-desc": "poivrons et pommes de terre frits - style traditionnel",
+    
+    // Baby Menu
+    "baby-title": "Menu Enfant",
+    "pasta-sugo": "Pâtes à la sauce",
+    "pasta-sugo-desc": "orecchiettes à la sauce tomate",
+    "baby-hamburger": "Hamburger Enfant",
+    "baby-hamburger-desc": "burger de poulet avec accompagnement de frites",
+    
+    // Price
+    "price": "€",
   }
 };
 
-export function t(key: string, language: 'en' | 'ar' | 'it'): string {
+export function t(key: string, language: 'en' | 'ar' | 'it' | 'fr'): string {
   return translations[language][key as keyof typeof translations['en']] || key;
 }
