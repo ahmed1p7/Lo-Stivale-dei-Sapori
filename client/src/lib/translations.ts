@@ -107,6 +107,11 @@ export const translations = {
     
     // Price
     "price": "€",
+    
+    // Additional translations
+    "authentic-experience": "Experience authentic Italian cuisine prepared with passion and the finest ingredients.",
+    "zizzona-1k": "Zizzona 1k",
+    "zizzona-1k-desc": "Premium version of our signature Zizzona with extra special ingredients",
   },
   ar: {
     // Header
@@ -216,6 +221,11 @@ export const translations = {
     
     // Price
     "price": "€",
+    
+    // Additional translations
+    "authentic-experience": "استمتع بأصيل الطعام الإيطالي المحضر بشغف وأفضل المكونات.",
+    "zizzona-1k": "زيزونا 1k",
+    "zizzona-1k-desc": "نسخة مميزة من زيزونا الخاصة بنا مع مكونات إضافية مميزة",
   },
   it: {
     // Header
@@ -325,6 +335,11 @@ export const translations = {
     
     // Price
     "price": "€",
+    
+    // Additional translations
+    "authentic-experience": "Scopri l'autentica cucina italiana preparata con passione e i migliori ingredienti.",
+    "zizzona-1k": "Zizzona 1k",
+    "zizzona-1k-desc": "Versione premium della nostra Zizzona con ingredienti extra speciali",
   },
   fr: {
     // Header
@@ -434,6 +449,11 @@ export const translations = {
     
     // Price
     "price": "€",
+    
+    // Additional translations
+    "authentic-experience": "Découvrez une cuisine italienne authentique préparée avec passion et les meilleurs ingrédients.",
+    "zizzona-1k": "Zizzona 1k",
+    "zizzona-1k-desc": "Version premium de notre Zizzona signature avec des ingrédients extra spéciaux",
   }
 };
 
