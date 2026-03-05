@@ -39,9 +39,7 @@ export default function TartarePage() {
           {t('tartare-title', language)}
         </h2>
         <p className="text-muted-foreground mb-6" style={{ fontFamily: 'Lato, sans-serif' }}>
-          {language === 'en'
-            ? 'Fresh and delicate tartare preparations, showcasing the finest raw ingredients.'
-            : 'تحضيرات التارتار الطازجة والرقيقة، تعرض أفضل المكونات الخام.'}
+          {t('tartare-desc-page', language)}
         </p>
 
         <div className="bg-card rounded-lg p-8 border border-accent/20">
@@ -67,9 +65,7 @@ export default function TartarePage() {
           {t('zizzona-title', language)}
         </h2>
         <p className="text-muted-foreground mb-6" style={{ fontFamily: 'Lato, sans-serif' }}>
-          {language === 'en'
-            ? 'A signature dish featuring premium buffalo mozzarella with traditional Calabrian flavors.'
-            : 'طبق توقيعي يضم موزاريلا جاموس فاخرة مع نكهات كالابريا التقليدية.'}
+          {t('zizzona-desc-page', language)}
         </p>
 
         <div className="bg-card rounded-lg p-8 border border-accent/20">

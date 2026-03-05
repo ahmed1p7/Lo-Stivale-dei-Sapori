@@ -31,9 +31,7 @@ export default function PrimiPage() {
             {t('primi-title', language)}
           </h2>
           <p className="text-muted-foreground" style={{ fontFamily: 'Lato, sans-serif' }}>
-            {language === 'en'
-              ? 'Traditional Italian pasta dishes prepared with authentic recipes and the finest ingredients.'
-              : 'أطباق المعكرونة الإيطالية التقليدية المحضرة بوصفات أصيلة وأفضل المكونات.'}
+            {t('primi-desc-page', language)}
           </p>
         </div>
         <div className="relative h-80 rounded-lg overflow-hidden border border-accent/20">

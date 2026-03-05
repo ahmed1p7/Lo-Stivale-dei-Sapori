@@ -39,9 +39,7 @@ export default function BruschettePage() {
             {t('bruschette-title', language)}
           </h2>
           <p className="text-muted-foreground" style={{ fontFamily: 'Lato, sans-serif' }}>
-            {language === 'en'
-              ? 'Toasted Altamura bread topped with premium ingredients and traditional flavors.'
-              : 'خبز ألتامورا محمص مع مكونات فاخرة والنكهات التقليدية.'}
+            {t('bruschette-desc-page', language)}
           </p>
         </div>
         <div className="relative h-80 rounded-lg overflow-hidden border border-accent/20">

@@ -31,9 +31,7 @@ export default function ContorniPage() {
           {t('contorni-title', language)}
         </h2>
         <p className="text-muted-foreground" style={{ fontFamily: 'Lato, sans-serif' }}>
-          {language === 'en'
-            ? 'Carefully selected side dishes to complement your main course perfectly.'
-            : 'أطباق جانبية مختارة بعناية لتكمل طبقك الرئيسي بشكل مثالي.'}
+          {t('contorni-desc-page', language)}
         </p>
       </div>
 

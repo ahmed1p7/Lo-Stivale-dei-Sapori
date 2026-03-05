@@ -23,9 +23,7 @@ export default function SpecialPage() {
           {t('special-title', language)}
         </h2>
         <p className="text-muted-foreground" style={{ fontFamily: 'Lato, sans-serif' }}>
-          {language === 'en'
-            ? 'Our most exclusive and refined selections, curated for the most discerning palates.'
-            : 'أفضل اختياراتنا الحصرية والمكررة، المختارة لأكثر الأذواق تمييزاً.'}
+          {t('special-desc-page', language)}
         </p>
       </div>
 

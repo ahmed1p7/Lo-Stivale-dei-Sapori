@@ -23,9 +23,7 @@ export default function BabyPage() {
           {t('baby-title', language)}
         </h2>
         <p className="text-muted-foreground" style={{ fontFamily: 'Lato, sans-serif' }}>
-          {language === 'en'
-            ? 'Delicious and nutritious options specially prepared for our younger guests.'
-            : 'خيارات لذيذة ومغذية مُحضرة خصيصاً لضيوفنا الصغار.'}
+          {t('baby-desc-page', language)}
         </p>
       </div>
 

@@ -39,7 +39,7 @@ const grigliate = [
   },
 ];
 
-export default function GrilliateP() {
+export default function GrigliatePage() {
   const { language } = useLanguage();
 
   return (
@@ -51,9 +51,7 @@ export default function GrilliateP() {
             {t('grigliate-title', language)}
           </h2>
           <p className="text-muted-foreground" style={{ fontFamily: 'Lato, sans-serif' }}>
-            {language === 'en'
-              ? 'Premium grilled selections featuring the finest cuts of meat and fresh seafood, expertly prepared over the flame.'
-              : 'اختيارات مشوية فاخرة تضم أفضل قطع اللحم والمأكولات البحرية الطازجة، المحضرة بخبرة على اللهب.'}
+            {t('grigliate-desc-page', language)}
           </p>
         </div>
         <div className="relative h-80 rounded-lg overflow-hidden border border-accent/20">

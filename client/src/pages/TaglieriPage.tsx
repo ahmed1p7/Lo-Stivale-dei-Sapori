@@ -31,9 +31,7 @@ export default function TaglieriPage() {
             {t('taglieri-title', language)}
           </h2>
           <p className="text-muted-foreground" style={{ fontFamily: 'Lato, sans-serif' }}>
-            {language === 'en'
-              ? 'Exquisite platters featuring premium Italian cured meats, aged cheeses, and artisanal accompaniments.'
-              : 'صواني فاخرة تضم أفضل اللحوم المقددة الإيطالية والأجبان المعتقة والمرافقات الحرفية.'}
+            {t('taglieri-desc-page', language)}
           </p>
         </div>
         <div className="relative h-80 rounded-lg overflow-hidden border border-accent/20">

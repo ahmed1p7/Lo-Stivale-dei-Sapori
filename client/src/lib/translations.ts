@@ -112,6 +112,15 @@ export const translations = {
     "authentic-experience": "Experience authentic Italian cuisine prepared with passion and the finest ingredients.",
     "zizzona-1k": "Zizzona 1k",
     "zizzona-1k-desc": "Premium version of our signature Zizzona with extra special ingredients",
+    "taglieri-desc-page": "Exquisite platters featuring premium Italian cured meats, aged cheeses, and artisanal accompaniments.",
+    "special-desc-page": "Our most exclusive and refined selections, curated for the most discerning palates.",
+    "tartare-desc-page": "Fresh and delicate tartare preparations, showcasing the finest raw ingredients.",
+    "zizzona-desc-page": "A signature dish featuring premium buffalo mozzarella with traditional Calabrian flavors.",
+    "bruschette-desc-page": "Toasted Altamura bread topped with premium ingredients and traditional flavors.",
+    "primi-desc-page": "Traditional Italian pasta dishes prepared with authentic recipes and the finest ingredients.",
+    "grigliate-desc-page": "Premium grilled selections featuring the finest cuts of meat and fresh seafood, expertly prepared over the flame.",
+    "contorni-desc-page": "Carefully selected side dishes to complement your main course perfectly.",
+    "baby-desc-page": "Delicious and nutritious options specially prepared for our younger guests.",
   },
   ar: {
     // Header
@@ -226,6 +235,15 @@ export const translations = {
     "authentic-experience": "استمتع بأصيل الطعام الإيطالي المحضر بشغف وأفضل المكونات.",
     "zizzona-1k": "زيزونا 1k",
     "zizzona-1k-desc": "نسخة مميزة من زيزونا الخاصة بنا مع مكونات إضافية مميزة",
+    "taglieri-desc-page": "صواني فاخرة تضم أفضل اللحوم المقددة الإيطالية والأجبان المعتقة والمرافقات الحرفية.",
+    "special-desc-page": "أفضل اختياراتنا الحصرية والمكررة، المختارة لأكثر الأذواق تمييزاً.",
+    "tartare-desc-page": "تحضيرات التارتار الطازجة والرقيقة، تعرض أفضل المكونات الخام.",
+    "zizzona-desc-page": "طبق توقيعي يضم موزاريلا جاموس فاخرة مع نكهات كالابريا التقليدية.",
+    "bruschette-desc-page": "خبز ألتامورا محمص مع مكونات فاخرة والنكهات التقليدية.",
+    "primi-desc-page": "أطباق المعكرونة الإيطالية التقليدية المحضرة بوصفات أصيلة وأفضل المكونات.",
+    "grigliate-desc-page": "اختيارات مشوية فاخرة تضم أفضل قطع اللحم والمأكولات البحرية الطازجة، المحضرة بخبرة على اللهب.",
+    "contorni-desc-page": "أطباق جانبية مختارة بعناية لتكمل طبقك الرئيسي بشكل مثالي.",
+    "baby-desc-page": "خيارات لذيذة ومغذية مُحضرة خصيصاً لضيوفنا الصغار.",
   },
   it: {
     // Header
@@ -340,6 +358,15 @@ export const translations = {
     "authentic-experience": "Scopri l'autentica cucina italiana preparata con passione e i migliori ingredienti.",
     "zizzona-1k": "Zizzona 1k",
     "zizzona-1k-desc": "Versione premium della nostra Zizzona con ingredienti extra speciali",
+    "taglieri-desc-page": "Squisiti taglieri con salumi italiani di prima qualità, formaggi stagionati e accompagnamenti artigianali.",
+    "special-desc-page": "Le nostre selezioni più esclusive e raffinate, curate per i palati più esigenti.",
+    "tartare-desc-page": "Preparazioni di tartare fresche e delicate, che mettono in risalto le migliori materie prime.",
+    "zizzona-desc-page": "Un piatto d'autore con mozzarella di bufala premium e sapori tradizionali calabresi.",
+    "bruschette-desc-page": "Pane di Altamura tostato condito con ingredienti di prima qualità e sapori tradizionali.",
+    "primi-desc-page": "Primi piatti della tradizione italiana preparati con ricette autentiche e i migliori ingredienti.",
+    "grigliate-desc-page": "Selezioni alla griglia premium con i migliori tagli di carne e frutti di mare freschi, preparati sapientemente sulla fiamma.",
+    "contorni-desc-page": "Contorni accuratamente selezionati per completare perfettamente il vostro piatto principale.",
+    "baby-desc-page": "Opzioni deliziose e nutrienti preparate appositamente per i nostri ospiti più piccoli.",
   },
   fr: {
     // Header
@@ -454,6 +481,15 @@ export const translations = {
     "authentic-experience": "Découvrez une cuisine italienne authentique préparée avec passion et les meilleurs ingrédients.",
     "zizzona-1k": "Zizzona 1k",
     "zizzona-1k-desc": "Version premium de notre Zizzona signature avec des ingrédients extra spéciaux",
+    "taglieri-desc-page": "Des plateaux exquis composés de charcuteries italiennes de qualité supérieure, de fromages affinés et d'accompagnements artisanaux.",
+    "special-desc-page": "Nos sélections les plus exclusives et raffinées, conçues pour les palais les plus exigeants.",
+    "tartare-desc-page": "Des préparations de tartares frais et délicats, mettant en valeur les meilleurs ingrédients crus.",
+    "zizzona-desc-page": "Un plat signature composé de mozzarella de bufflonne de qualité supérieure aux saveurs traditionnelles de Calabre.",
+    "bruschette-desc-page": "Pain d'Altamura grillé garni d'ingrédients de qualité supérieure et de saveurs traditionnelles.",
+    "primi-desc-page": "Plats de pâtes italiennes traditionnelles préparés selon des recettes authentiques avec les meilleurs ingrédients.",
+    "grigliate-desc-page": "Sélections de grillades de qualité supérieure comprenant les meilleures coupes de viande et des fruits de mer frais, préparés avec expertise à la flamme.",
+    "contorni-desc-page": "Des accompagnements soigneusement sélectionnés pour compléter parfaitement votre plat principal.",
+    "baby-desc-page": "Des options délicieuses et nutritives spécialement préparées pour nos plus jeunes clients.",
   }
 };
 

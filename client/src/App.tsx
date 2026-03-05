@@ -5,7 +5,7 @@ import BabyPage from "@/pages/BabyPage";
 import BruschettePage from "@/pages/BruschettePage";
 import ContorniPage from "@/pages/ContorniPage";
 import CoverPage from "@/pages/CoverPage";
-import GrilliateP from "@/pages/GrilliateP age";
+import GrigliatePage from "@/pages/GrigliatePage";
 import PrimiPage from "@/pages/PrimiPage";
 import SpecialPage from "@/pages/SpecialPage";
 import TaglieriPage from "@/pages/TaglieriPage";
@@ -34,7 +34,7 @@ function Router() {
       case 'primi':
         return <PrimiPage />;
       case 'grigliate':
-        return <GrilliateP />;
+        return <GrigliatePage />;
       case 'contorni':
         return <ContorniPage />;
       case 'baby':
