@@ -63,7 +63,7 @@ export default function CoverPage() {
         </h2>
 
         <div className="space-y-6">
-          {/* Live Date and Time */}
+          {/* Live Date */}
           <div className="bg-background rounded-lg p-6 border border-accent/20">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
               <div>
@@ -72,14 +72,6 @@ export default function CoverPage() {
                 </p>
                 <p className="text-lg font-semibold text-accent" style={{ fontFamily: 'Playfair Display, serif' }}>
                   {formatDate(currentDate)}
-                </p>
-              </div>
-              <div>
-                <p className="text-sm text-muted-foreground mb-1">
-                  {language === 'ar' ? 'الوقت الحالي' : language === 'it' ? 'Ora attuale' : language === 'fr' ? 'Heure actuelle' : 'Current Time'}
-                </p>
-                <p className="text-lg font-semibold text-accent" style={{ fontFamily: 'Playfair Display, serif' }}>
-                  {formatTime(currentDate)}
                 </p>
               </div>
             </div>
