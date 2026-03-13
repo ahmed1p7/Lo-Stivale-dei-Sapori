@@ -2,11 +2,37 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { t } from '@/lib/translations';
 import { ChevronDown } from 'lucide-react';
 import { Button } from './ui/button';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Header() {
   const { language, setLanguage } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
+  const [currentDate, setCurrentDate] = useState(new Date());
+  
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentDate(new Date());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+  
+  const localeMap: Record<string, string> = {
+    en: 'en-US',
+    ar: 'ar-SA',
+    it: 'it-IT',
+    fr: 'fr-FR',
+  };
+
+  const formatDate = (date: Date) => {
+    const options: Intl.DateTimeFormatOptions = {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    };
+    
+    return date.toLocaleDateString(localeMap[language] || 'en-US', options);
+  };
   
   const languages: { code: 'en' | 'ar' | 'it' | 'fr', label: string }[] = [
     { code: 'en', label: 'EN' },
@@ -26,7 +52,7 @@ export default function Header() {
               {t('restaurant-name', language)}
             </h1>
             <p className="text-sm md:text-base text-muted-foreground mt-2" style={{ fontFamily: 'Lato, sans-serif' }}>
-              {t('season-year', language)}
+              {formatDate(currentDate)}
             </p>
           </div>
           
