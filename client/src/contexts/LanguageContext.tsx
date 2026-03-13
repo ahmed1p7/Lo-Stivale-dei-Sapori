@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 
 type Language = 'en' | 'ar' | 'it' | 'fr';
 
@@ -13,8 +13,32 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
+function getBrowserLanguage(): Language {
+  if (typeof navigator === 'undefined') return 'en';
+  
+  const browserLang = navigator.language.toLowerCase();
+  
+  if (browserLang.startsWith('ar')) return 'ar';
+  if (browserLang.startsWith('it')) return 'it';
+  if (browserLang.startsWith('fr')) return 'fr';
+  if (browserLang.startsWith('en')) return 'en';
+  
+  // Default to English for unsupported languages
+  return 'en';
+}
+
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguage] = useState<Language>('en');
+  const [language, setLanguageState] = useState<Language>('en');
+  
+  useEffect(() => {
+    // Auto-detect browser language on mount
+    const detectedLang = getBrowserLanguage();
+    setLanguageState(detectedLang);
+  }, []);
+  
+  const setLanguage = (lang: Language) => {
+    setLanguageState(lang);
+  };
 
   return (
     <LanguageContext.Provider
