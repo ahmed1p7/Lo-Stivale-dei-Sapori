@@ -1,10 +1,48 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { t } from '@/lib/translations';
+import { useState, useEffect } from 'react';
 
 const heroImage = 'https://d2xsxph8kpxj0f.cloudfront.net/310419663027448761/bBMCDdfoeZuqr7v5bwyN4h/hero-italian-restaurant-UwJ8p2Jadc4vnmJJvthUAC.webp';
 
 export default function CoverPage() {
   const { language } = useLanguage();
+  const [currentDate, setCurrentDate] = useState(new Date());
+
+  useEffect(() => {
+    // Update the date every second to keep it live
+    const timer = setInterval(() => {
+      setCurrentDate(new Date());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const formatDate = (date: Date) => {
+    const options: Intl.DateTimeFormatOptions = {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    };
+    
+    // Format based on current language
+    const localeMap: Record<string, string> = {
+      en: 'en-US',
+      ar: 'ar-SA',
+      it: 'it-IT',
+      fr: 'fr-FR',
+    };
+    
+    return date.toLocaleDateString(localeMap[language] || 'en-US', options);
+  };
+
+  const formatTime = (date: Date) => {
+    return date.toLocaleTimeString(localeMap[language] || 'en-US', {
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+    });
+  };
 
   return (
     <div className="space-y-8">
@@ -25,6 +63,28 @@ export default function CoverPage() {
         </h2>
 
         <div className="space-y-6">
+          {/* Live Date and Time */}
+          <div className="bg-background rounded-lg p-6 border border-accent/20">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <div>
+                <p className="text-sm text-muted-foreground mb-1">
+                  {language === 'ar' ? 'التاريخ الحالي' : language === 'it' ? 'Data odierna' : language === 'fr' ? 'Date actuelle' : 'Current Date'}
+                </p>
+                <p className="text-lg font-semibold text-accent" style={{ fontFamily: 'Playfair Display, serif' }}>
+                  {formatDate(currentDate)}
+                </p>
+              </div>
+              <div>
+                <p className="text-sm text-muted-foreground mb-1">
+                  {language === 'ar' ? 'الوقت الحالي' : language === 'it' ? 'Ora attuale' : language === 'fr' ? 'Heure actuelle' : 'Current Time'}
+                </p>
+                <p className="text-lg font-semibold text-accent" style={{ fontFamily: 'Playfair Display, serif' }}>
+                  {formatTime(currentDate)}
+                </p>
+              </div>
+            </div>
+          </div>
+
           <p className="text-base md:text-lg text-foreground leading-relaxed" style={{ fontFamily: 'Lato, sans-serif' }}>
             {t('wait-message', language)}
           </p>

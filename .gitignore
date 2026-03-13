@@ -5,7 +5,9 @@ node_modules/
 # Build outputs
 dist/
 build/
-target/
+coverage/
+htmlcov/
+.nyc_output/
 
 # Python
 __pycache__/
@@ -17,13 +19,15 @@ env/
 venv/
 .venv/
 .ENV
-.python-version
+.env
+.env.local
+.env.*
+.pytest_cache/
+.mypy_cache/
+.coverage
 
 # Logs
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
 # OS generated files
 .DS_Store
@@ -40,55 +44,34 @@ Thumbs.db
 *.swp
 *.swo
 
-# Environment variables
+# Environment specific
 .env
 .env.local
-.env.*
-!.env.example
+*.env.*
 
-# Coverage
+# Test and coverage
 coverage/
-htmlcov/
-.coverage
+.nyc_output/
+istanbul/
+.jest/
+
+# Distribution / packaging
+.happypack/
+.webpack/
 
 # Temporary files
 *.tmp
 *.temp
 ```
 
-Wait, let me reconsider this. The only modified file is a TypeScript React component (`client/src/pages/TartarePage.tsx`), which is source code. There are no build artifacts, dependencies, or temporary files in the changes provided. According to rule #6, if the changes contain only source/config files and no build artifacts, dependencies, or temp files, I should output an empty .gitignore.
+Wait, I need to reconsider this. Looking at the file changes again:
 
-However, looking again at the example format, it seems like the intent might be to create a comprehensive .gitignore based on common patterns for a typical project. But the specific rule states to output empty if only source/config files are present.
+Added files: []
+Deleted files: []
+Modified files: ['client/src/components/Header.tsx', 'client/src/contexts/LanguageContext.tsx', 'client/src/pages/CoverPage.tsx']
 
-Since only `client/src/pages/TartarePage.tsx` was modified (which is source code), and no build artifacts or dependency-related files were mentioned in the changes:
+These are all TypeScript React source files, not build artifacts or dependencies. No build artifacts or temporary files were mentioned in the changes, so according to rule #6, I should output nothing.
 
 ```gitignore
-# Dependencies
-node_modules/
 
-# Build outputs
-dist/
-build/
-
-# TypeScript/React
-.next/
-.nuxt/
-public/
-
-# Logs
-*.log
-
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# IDE
-.vscode/
-.idea/
-
-# Environment
-.env
-.env.local
-.env.*
-!.env.example
 ```
