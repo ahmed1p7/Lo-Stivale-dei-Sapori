@@ -17,20 +17,20 @@ export default function CoverPage() {
     return () => clearInterval(timer);
   }, []);
 
+  // Locale mapping for date/time formatting based on language
+  const localeMap: Record<string, string> = {
+    en: 'en-US',
+    ar: 'ar-SA',
+    it: 'it-IT',
+    fr: 'fr-FR',
+  };
+
   const formatDate = (date: Date) => {
     const options: Intl.DateTimeFormatOptions = {
       weekday: 'long',
       year: 'numeric',
       month: 'long',
       day: 'numeric',
-    };
-    
-    // Format based on current language
-    const localeMap: Record<string, string> = {
-      en: 'en-US',
-      ar: 'ar-SA',
-      it: 'it-IT',
-      fr: 'fr-FR',
     };
     
     return date.toLocaleDateString(localeMap[language] || 'en-US', options);
