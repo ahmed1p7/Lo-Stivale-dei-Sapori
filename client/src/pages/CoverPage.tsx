@@ -63,20 +63,6 @@ export default function CoverPage() {
         </h2>
 
         <div className="space-y-6">
-          {/* Live Date */}
-          <div className="bg-background rounded-lg p-6 border border-accent/20">
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-              <div>
-                <p className="text-sm text-muted-foreground mb-1">
-                  {language === 'ar' ? 'التاريخ الحالي' : language === 'it' ? 'Data odierna' : language === 'fr' ? 'Date actuelle' : 'Current Date'}
-                </p>
-                <p className="text-lg font-semibold text-accent" style={{ fontFamily: 'Playfair Display, serif' }}>
-                  {formatDate(currentDate)}
-                </p>
-              </div>
-            </div>
-          </div>
-
           <p className="text-base md:text-lg text-foreground leading-relaxed" style={{ fontFamily: 'Lato, sans-serif' }}>
             {t('wait-message', language)}
           </p>
