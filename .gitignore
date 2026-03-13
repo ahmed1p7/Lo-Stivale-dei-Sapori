@@ -1,76 +1,55 @@
 ```gitignore
 # Dependencies
 node_modules/
+.pnpm-store/
+.yarn/
+.yarn-cache/
 
 # Build outputs
 dist/
 build/
-coverage/
-htmlcov/
-.nyc_output/
+.out/
+.bundle/
 
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-env/
-venv/
-.venv/
-.ENV
-.env
-.env.local
-.env.*
-.pytest_cache/
-.mypy_cache/
-.coverage
+# TypeScript/JavaScript
+*.js.map
+*.ts.map
+*.jsx.map
+*.tsx.map
 
 # Logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+# Environment variables
+.env
+.env.local
+.env.*
+!.env.example
 
-# IDE
+# IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
+.DS_Store
+Thumbs.db
 
-# Environment specific
-.env
-.env.local
-*.env.*
-
-# Test and coverage
+# Coverage
 coverage/
 .nyc_output/
 istanbul/
 .jest/
 
-# Distribution / packaging
-.happypack/
-.webpack/
-
 # Temporary files
 *.tmp
 *.temp
+.DS_Store
 ```
 
-Wait, I need to reconsider this. Looking at the file changes again:
-
-Added files: []
-Deleted files: []
-Modified files: ['client/src/components/Header.tsx', 'client/src/contexts/LanguageContext.tsx', 'client/src/pages/CoverPage.tsx']
-
-These are all TypeScript React source files, not build artifacts or dependencies. No build artifacts or temporary files were mentioned in the changes, so according to rule #6, I should output nothing.
+Wait, let me reconsider. The only modified file is `client/src/pages/CoverPage.tsx` which is a source code file. There are no build artifacts, dependencies, or temporary files in the changes. According to rule 6, if the changes contain only source files and no build artifacts, dependencies, or temp files, I should output nothing.
 
 ```gitignore
 
