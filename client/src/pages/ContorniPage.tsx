@@ -4,20 +4,24 @@ import { t } from '@/lib/translations';
 
 const contorni = [
   {
-    key: 'insalata',
-    price: '€8',
+    key: 'insalata-mista',
+    price: '€5',
   },
   {
     key: 'patate-forno',
     price: '€6',
   },
   {
-    key: 'verdure',
-    price: '€7',
+    key: 'patate-fritte',
+    price: '€6',
+  },
+  {
+    key: 'verdure-stagione',
+    price: '€8',
   },
   {
     key: 'patate-mblacchiuse',
-    price: '€8',
+    price: '€7',
   },
 ];
 

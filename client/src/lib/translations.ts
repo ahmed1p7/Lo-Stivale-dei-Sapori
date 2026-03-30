@@ -165,18 +165,6 @@ export const translations: Record<string, Record<Language, string>> = {
     ar: 'زيتزونا من باتيباليا مع كابوكولو كالابري',
     fr: 'Zizzona de Battipaglia avec capocollo calabrais',
   },
-  'zizzona-1k': {
-    it: 'Zizzona al Kg',
-    en: 'Zizzona per Kg',
-    ar: 'الزيتزونا للكيلو',
-    fr: 'Zizzona au Kg',
-  },
-  'zizzona-1k-desc': {
-    it: 'prezzo al chilogrammo',
-    en: 'price per kilogram',
-    ar: 'السعر للكيلوغرام',
-    fr: 'prix au kilogramme',
-  },
 
   // Bruschette Page
   'bruschette-title': {
