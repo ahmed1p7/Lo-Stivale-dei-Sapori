@@ -8,6 +8,7 @@ const taglieri = [
   {
     key: 'calabria-docet',
     price: '€32',
+    serves: '(per 2 persone)',
   },
   {
     key: 'piccola-calabria',
@@ -15,7 +16,21 @@ const taglieri = [
   },
   {
     key: 'vegetariano',
-    price: '€15',
+    price: '€16',
+  },
+  {
+    key: 'stivale-tagliere',
+    price: '€28',
+    serves: '(per 2 persone)',
+  },
+  {
+    key: 'trilogia-crudo',
+    price: '€25',
+  },
+  {
+    key: 'tagliere-umbro',
+    price: '€32',
+    serves: '(per 2 persone)',
   },
 ];
 
@@ -52,6 +67,7 @@ export default function TaglieriPage() {
               name={t(item.key, language)}
               description={t(`${item.key}-desc`, language)}
               price={item.price}
+              serves={item.serves ? t('calabria-docet-serves', language) : undefined}
             />
           ))}
         </div>

@@ -1,1 +1,1 @@
-Nothing should be ignored based on the provided file changes. The only file mentioned is a TypeScript source file (`client/src/lib/translations.ts`) which was deleted, and no build artifacts, dependencies, or temporary files are present in the change list.
+Nothing should be ignored based on the provided file changes, as they only include source code files (.ts, .tsx) without any build artifacts, dependencies, or temporary files.
