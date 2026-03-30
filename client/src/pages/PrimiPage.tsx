@@ -6,16 +6,28 @@ const pastaImage = 'https://d2xsxph8kpxj0f.cloudfront.net/310419663027448761/bBM
 
 const primi = [
   {
-    key: 'bacco',
-    price: '€13',
+    key: 'spaghetto-bacco',
+    price: '€14',
   },
   {
-    key: 'maccheroni',
+    key: 'maccheroni-porcini',
+    price: '€17',
+  },
+  {
+    key: 'orecchiette-rapa',
+    price: '€14',
+  },
+  {
+    key: 'spaghetto-nduja',
     price: '€15',
   },
   {
-    key: 'orecchiette',
-    price: '€12',
+    key: 'pastora-calabrese',
+    price: '€17',
+  },
+  {
+    key: 'spaghetto-stivale',
+    price: '€17',
   },
 ];
 

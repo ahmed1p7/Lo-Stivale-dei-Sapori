@@ -7,35 +7,35 @@ const grilledImage = 'https://d2xsxph8kpxj0f.cloudfront.net/310419663027448761/b
 const grigliate = [
   {
     key: 'calabria-griglia',
-    price: '€22',
+    price: '€26',
   },
   {
     key: 'caciocavallo-griglia',
-    price: '€18',
+    price: '€13',
   },
   {
     key: 'fiorentina',
-    price: '€45',
+    price: '€76 al Kg',
   },
   {
     key: 'entrecote',
-    price: '€32',
+    price: '€30',
   },
   {
     key: 'tomahawk',
-    price: '€55',
+    price: '€76 al kg',
   },
   {
-    key: 'wagyu',
-    price: '€60',
+    key: 'lombata-irlandese',
+    price: '€80 al kg',
   },
   {
     key: 'picagna',
-    price: '€28',
+    price: '€30',
   },
   {
-    key: 'spigola',
-    price: '€35',
+    key: 'ribeye-entrecote',
+    price: '€30',
   },
 ];
 

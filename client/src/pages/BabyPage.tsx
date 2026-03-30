@@ -5,11 +5,11 @@ import { t } from '@/lib/translations';
 const babyMenu = [
   {
     key: 'pasta-sugo',
-    price: '€8',
+    price: '€5',
   },
   {
     key: 'baby-hamburger',
-    price: '€10',
+    price: '€8',
   },
 ];
 
