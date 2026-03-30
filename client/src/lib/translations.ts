@@ -104,10 +104,10 @@ export const translations: Record<string, Record<Language, string>> = {
     fr: 'Sélection de tartares et carpaccios préparés fraîchement',
   },
   'tartare-bovino': {
-    it: 'Tartare di Bovino brasiliano e Tartufo umbro',
-    en: 'Brazilian Beef Tartare with Umbrian Truffle',
-    ar: 'تارتار لحم البقر البرازيلي مع الكمأ الأومبري',
-    fr: 'Tartare de Bœuf Brésilien et Truffe Ombrienne',
+    it: 'Tartare di Bovino brasiliano e Tartufo umbro — € 22',
+    en: 'Brazilian Beef Tartare with Umbrian Truffle — € 22',
+    ar: 'تارتار لحم البقر البرازيلي مع الكمأ الأومبري — € 22',
+    fr: 'Tartare de Bœuf Brésilien et Truffe Ombrienne — € 22',
   },
   'tartare-bovino-desc': {
     it: 'tartare di bovino brasiliano con misticanza e tartufo',
@@ -116,10 +116,10 @@ export const translations: Record<string, Record<Language, string>> = {
     fr: 'Tartare de bœuf brésilien avec salade composée et truffe',
   },
   'tartare-tonno': {
-    it: 'Tartare di tonno',
-    en: 'Tuna Tartare',
-    ar: 'تارتار التونة',
-    fr: 'Tartare de Thon',
+    it: 'Tartare di tonno — € 23',
+    en: 'Tuna Tartare — € 23',
+    ar: 'تارتار التونة — € 23',
+    fr: 'Tartare de Thon — € 23',
   },
   'tartare-tonno-desc': {
     it: 'tonno con misticanza',
@@ -128,10 +128,10 @@ export const translations: Record<string, Record<Language, string>> = {
     fr: 'thon avec salade composée',
   },
   'carpaccio': {
-    it: 'Carpaccio di Black Angus',
-    en: 'Black Angus Carpaccio',
-    ar: 'كارباتشو بلاك أنجوس',
-    fr: 'Carpaccio de Black Angus',
+    it: 'Carpaccio di Black Angus — € 20',
+    en: 'Black Angus Carpaccio — € 20',
+    ar: 'كارباتشو بلاك أنجوس — € 20',
+    fr: 'Carpaccio de Black Angus — € 20',
   },
   'carpaccio-desc': {
     it: 'black angus affumicato, olio al tartufo, tartufo umbro di prima scelta, rucola',
@@ -154,10 +154,10 @@ export const translations: Record<string, Record<Language, string>> = {
     fr: 'Spécialité campanienne de mozzarella géante',
   },
   'zizzona': {
-    it: 'La Zizzona di Battipaglia',
-    en: 'Zizzona from Battipaglia',
-    ar: 'الزيتزونا من باتيباليا',
-    fr: 'La Zizzona de Battipaglia',
+    it: 'La Zizzona di Battipaglia — € 30',
+    en: 'Zizzona from Battipaglia — € 30',
+    ar: 'الزيتزونا من باتيباليا — € 30',
+    fr: 'La Zizzona de Battipaglia — € 30',
   },
   'zizzona-desc': {
     it: 'Zizzona di Battipaglia con capocollo calabrese',
@@ -186,10 +186,10 @@ export const translations: Record<string, Record<Language, string>> = {
     fr: 'Bruschettas traditionnelles avec pain d\'Altamura DOP',
   },
   'caciocavallo': {
-    it: 'Bruschette con caciocavallo',
-    en: 'Bruschetta with Caciocavallo',
-    ar: 'بروشيتا مع كاتشوكافالو',
-    fr: 'Bruschetta au Caciocavallo',
+    it: 'Bruschette con caciocavallo — € 10',
+    en: 'Bruschetta with Caciocavallo — € 10',
+    ar: 'بروشيتا مع كاتشوكافالو — € 10',
+    fr: 'Bruschetta au Caciocavallo — € 10',
   },
   'caciocavallo-desc': {
     it: 'pane di Altamura e caciocavallo Silano',
@@ -198,10 +198,10 @@ export const translations: Record<string, Record<Language, string>> = {
     fr: 'pain d\'Altamura et caciocavallo Silano',
   },
   'lardo': {
-    it: 'Bruschette con Lardo di Patanegra',
-    en: 'Bruschetta with Patanegra Lardo',
-    ar: 'بروشيتا مع لاردو باتانيغرا',
-    fr: 'Bruschetta au Lardo de Patanegra',
+    it: 'Bruschette con Lardo di Patanegra — € 10',
+    en: 'Bruschetta with Patanegra Lardo — € 10',
+    ar: 'بروشيتا مع لاردو باتانيغرا — € 10',
+    fr: 'Bruschetta au Lardo de Patanegra — € 10',
   },
   'lardo-desc': {
     it: 'pane di Altamura e lardo Patanegra',
@@ -210,10 +210,10 @@ export const translations: Record<string, Record<Language, string>> = {
     fr: 'pain d\'Altamura et lardo Patanegra',
   },
   'pomodori': {
-    it: 'Bruschette con pomodori',
-    en: 'Bruschetta with Tomatoes',
-    ar: 'بروشيتا مع الطماطم',
-    fr: 'Bruschetta aux Tomates',
+    it: 'Bruschette con pomodori — € 10',
+    en: 'Bruschetta with Tomatoes — € 10',
+    ar: 'بروشيتا مع الطماطم — € 10',
+    fr: 'Bruschetta aux Tomates — € 10',
   },
   'pomodori-desc': {
     it: 'pane di Altamura, ciliegini, olio di oliva evo',
@@ -222,10 +222,10 @@ export const translations: Record<string, Record<Language, string>> = {
     fr: 'pain d\'Altamura, tomates cerises, huile d\'olive extra vierge',
   },
   'calabrese': {
-    it: 'Bruschetta Calabrese',
-    en: 'Calabrian Bruschetta',
-    ar: 'بروشيتا كالابرية',
-    fr: 'Bruschetta Calabraise',
+    it: 'Bruschetta Calabrese — € 15',
+    en: 'Calabrian Bruschetta — € 15',
+    ar: 'بروشيتا كالابرية — € 15',
+    fr: 'Bruschetta Calabraise — € 15',
   },
   'calabrese-desc': {
     it: 'pane di Altamura con baccalà alla calabrese, patate e olive',
@@ -234,10 +234,10 @@ export const translations: Record<string, Record<Language, string>> = {
     fr: 'pain d\'Altamura avec morue à la calabraise, pommes de terre et olives',
   },
   'stivale-bruschetta': {
-    it: 'Bruschetta Lo Stivale',
-    en: 'Lo Stivale Bruschetta',
-    ar: 'بروشيتا لو ستيفالي',
-    fr: 'Bruschetta Lo Stivale',
+    it: 'Bruschetta Lo Stivale — € 15',
+    en: 'Lo Stivale Bruschetta — € 15',
+    ar: 'بروشيتا لو ستيفالي — € 15',
+    fr: 'Bruschetta Lo Stivale — € 15',
   },
   'stivale-bruschetta-desc': {
     it: 'pane di Altamura, filetti di acciughe Cantabrico, burro a quadretti mono',
@@ -260,10 +260,10 @@ export const translations: Record<string, Record<Language, string>> = {
     fr: 'Sélection de charcuteries et fromages italiens',
   },
   'calabria-docet': {
-    it: 'Calabria Docet',
-    en: 'Calabria Docet',
-    ar: 'كالابريا دوسيت',
-    fr: 'Calabria Docet',
+    it: 'Calabria Docet — € 32',
+    en: 'Calabria Docet — € 32',
+    ar: 'كالابريا دوسيت — € 32',
+    fr: 'Calabria Docet — € 32',
   },
   'calabria-docet-desc': {
     it: 'soppressata dolce, salsiccia dolce, salsiccia piccante, capocollo calabrese, filetto calabrese, pancetta calabrese, pecorino d\'Angiò stagionato, pecorino di Piacenza Gran riserva, caciocavallo, marmellate artigianali, miele di acacia artigianale',
@@ -278,10 +278,10 @@ export const translations: Record<string, Record<Language, string>> = {
     fr: '(pour 2 personnes)',
   },
   'piccola-calabria': {
-    it: 'Tagliere La piccola Calabria',
-    en: 'Little Calabria Board',
-    ar: 'لوح كالابريا الصغير',
-    fr: 'Planche La Piccola Calabria',
+    it: 'Tagliere La piccola Calabria — € 16',
+    en: 'Little Calabria Board — € 16',
+    ar: 'لوح كالابريا الصغير — € 16',
+    fr: 'Planche La Piccola Calabria — € 16',
   },
   'piccola-calabria-desc': {
     it: 'soppressata dolce, salsiccia dolce, capocollo calabrese, filetto calabrese, pancetta calabrese, pecorino d\'Angiò stagionato, caciocavallo, marmellata di arancia artigianale, miele di acacia artigianale',
@@ -290,10 +290,10 @@ export const translations: Record<string, Record<Language, string>> = {
     fr: 'soppressata douce, saucisse douce, capocollo calabrais, filet calabrais, pancetta calabraise, pecorino d\'Angiò affiné, caciocavallo, marmelade d\'orange artisanale, miel d\'acacia artisanal',
   },
   'vegetariano': {
-    it: 'Vegetariano',
-    en: 'Vegetarian',
-    ar: 'نباتي',
-    fr: 'Végétarien',
+    it: 'Vegetariano — € 16',
+    en: 'Vegetarian — € 16',
+    ar: 'نباتي — € 16',
+    fr: 'Végétarien — € 16',
   },
   'vegetariano-desc': {
     it: 'carciofi, sott\'olio calabresi e novità dello cheff secondo disponibilità stagionale',
