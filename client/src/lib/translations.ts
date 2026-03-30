@@ -1,498 +1,676 @@
-export const translations = {
-  en: {
-    // Header
-    "restaurant-name": "Lo Stivale dei Sapori",
-    "season-year": "Autumn 2025",
-    "cover-charge": "Cover charge (Coperto): €2",
-    
-    // Navigation
-    "nav-cover": "Cover & Info",
-    "nav-taglieri": "I Taglieri",
-    "nav-special": "Special Platters",
-    "nav-tartare": "Tartare & Zizzona",
-    "nav-bruschette": "Bruschette",
-    "nav-primi": "Primi Piatti",
-    "nav-grigliate": "Grigliate",
-    "nav-contorni": "Contorni",
-    "nav-baby": "Baby Menu",
-    
-    // Cover & Info
-    "cover-title": "Cover & Info",
-    "wait-message": "✨ A wait that matters. With us, the wait is never empty. Every dish is prepared with care using fresh and selected raw materials. The time you wait is filled with our commitment to offering you an authentic experience.",
-    
-    // I Taglieri
-    "taglieri-title": "I Taglieri (Platters)",
-    "calabria-docet": "Calabria Docet (for 2 people)",
-    "calabria-docet-desc": "sweet soppressata, sweet sausage, spicy sausage, Calabrian capocollo, Calabrian fillet, Calabrian pancetta, aged Pecorino d'Angiò, Gran Riserva Piacenza Pecorino, caciocavallo cheese, artisanal jams, artisanal acacia honey",
-    "piccola-calabria": "Tagliere La piccola Calabria",
-    "piccola-calabria-desc": "sweet soppressata, sweet sausage, Calabrian capocollo, Calabrian fillet, Calabrian pancetta, aged Pecorino d'Angiò, caciocavallo cheese, artisanal orange marmalade, artisanal acacia honey",
-    "vegetariano": "Vegetariano",
-    "vegetariano-desc": "Beetroot carpaccio, small friselle bread, Calabrian vegetables in oil, crudités and cheeses according to seasonal availability",
-    
-    // Special Platters
-    "special-title": "Special Platters",
-    "stivale": "Lo Stivale dei Sapori (for 2 people)",
-    "stivale-desc": "24-month Parma ham, Martina Franca capocollo, mortadella with almonds and pistachio, aged Pecorino d'Angiò, Gran Riserva Piacenza Pecorino, caciocavallo cheese, artisanal jams, artisanal acacia honey",
-    "trilogi": "Trilogi di Crudo (for 2 people)",
-    "trilogi-desc": "Culatello di Zibello DOP, Black Pig cured ham, Cinta Senese cured ham with burrata cheese",
-    
-    // Tartare
-    "tartare-title": "Le Tartare (Tartare Dishes)",
-    "tartare-bovino": "Tartare di Bovino brasiliano e Tartufo umbro",
-    "tartare-bovino-desc": "Brazilian Beef tartare with mixed greens and Umbrian truffle",
-    "tartare-tonno": "Tartare di tonno",
-    "tartare-tonno-desc": "Tuna tartare with mixed greens",
-    "carpaccio": "Carpaccio di Black Angus",
-    "carpaccio-desc": "Smoked Black Angus, truffle oil, premium Umbrian truffle, arugula",
-    "zizzona-title": "La Zizzona",
-    "zizzona": "La Zizzona di Battipaglia",
-    "zizzona-desc": "Large Battipaglia buffalo mozzarella with Calabrian capocollo",
-    
-    // Bruschette
-    "bruschette-title": "Le Bruschette (on Altamura bread)",
-    "caciocavallo": "Bruschette con caciocavallo",
-    "caciocavallo-desc": "Altamura bread and Silano caciocavallo cheese",
-    "lardo": "Bruschette con Lardo di Patanegra",
-    "lardo-desc": "Altamura bread and Patanegra lard",
-    "pomodori": "Bruschette con pomodori",
-    "pomodori-desc": "Altamura bread, cherry tomatoes, extra virgin olive oil",
-    "calabrese": "Bruschetta Calabrese",
-    "calabrese-desc": "Altamura bread with Calabrian-style cod, potatoes and olives",
-    "stivale-bruschetta": "Bruschetta Lo Stivale",
-    "stivale-bruschetta-desc": "Altamura bread, Cantabrian anchovy fillets, single-serving butter squares",
-    
-    // Primi Piatti
-    "primi-title": "I Primi Piatti (First Courses)",
-    "bacco": "Spaghetto Bacco",
-    "bacco-desc": "spaghetti with Calabrian wine and baked olives",
-    "maccheroni": "Maccheroni, salsiccia calabrese e porcini della Sila",
-    "maccheroni-desc": "maccheroni, fresh Calabrian sausage, Sila porcini mushrooms, extra virgin olive oil",
-    "orecchiette": "Orecchiette con cime di rapa",
-    "orecchiette-desc": "orecchiette pasta, turnip greens, extra virgin olive oil, garlic and breadcrumbs",
-    
-    // Grigliate
-    "grigliate-title": "Le Grigliate (Grilled Dishes)",
-    "calabria-griglia": "Calabria alla griglia",
-    "calabria-griglia-desc": "sausage, hamburger, bombette, black pork ribs",
-    "caciocavallo-griglia": "Caciocavallo alla griglia",
-    "caciocavallo-griglia-desc": "grilled caciocavallo cheese, mixed greens and truffle oil",
-    "fiorentina": "Fiorentina",
-    "fiorentina-desc": "weight between 950g and 1250g",
-    "entrecote": "Entrecôte",
-    "entrecote-desc": "weight between 250g and 350g",
-    "tomahawk": "Tomahawk",
-    "wagyu": "Wagyu Kobe",
-    "picagna": "Picagna",
-    "picagna-desc": "weight between 290g and 330g",
-    "spigola": "Spigola al forno",
-    "spigola-desc": "Baked Sea Bass",
-    
-    // Contorni
-    "contorni-title": "I Contorni (Side Dishes)",
-    "insalata": "Insalata mista",
-    "insalata-desc": "lettuce, radicchio, arugula, cherry tomatoes, carrots, meloncelles/cucumber-melons",
-    "patate-forno": "Patate al forno",
-    "patate-forno-desc": "roasted potatoes and rosemary",
-    "verdure": "Verdure di stagione",
-    "verdure-desc": "stewed chicory or sautéed turnip greens",
-    "patate-mblacchiuse": "Patate \"mblacchiuse\"",
-    "patate-mblacchiuse-desc": "fried peppers and potatoes - traditional style",
-    
-    // Baby Menu
-    "baby-title": "Baby Menu",
-    "pasta-sugo": "Pasta al sugo",
-    "pasta-sugo-desc": "orecchiette pasta with tomato sauce",
-    "baby-hamburger": "Baby Hamburger",
-    "baby-hamburger-desc": "chicken burger with a side of fries",
-    
-    // Price
-    "price": "€",
-    
-    // Additional translations
-    "authentic-experience": "Experience authentic Italian cuisine prepared with passion and the finest ingredients.",
-    "zizzona-1k": "Zizzona 1k",
-    "zizzona-1k-desc": "Premium version of our signature Zizzona with extra special ingredients",
-    "taglieri-desc-page": "Exquisite platters featuring premium Italian cured meats, aged cheeses, and artisanal accompaniments.",
-    "special-desc-page": "Our most exclusive and refined selections, curated for the most discerning palates.",
-    "tartare-desc-page": "Fresh and delicate tartare preparations, showcasing the finest raw ingredients.",
-    "zizzona-desc-page": "A signature dish featuring premium buffalo mozzarella with traditional Calabrian flavors.",
-    "bruschette-desc-page": "Toasted Altamura bread topped with premium ingredients and traditional flavors.",
-    "primi-desc-page": "Traditional Italian pasta dishes prepared with authentic recipes and the finest ingredients.",
-    "grigliate-desc-page": "Premium grilled selections featuring the finest cuts of meat and fresh seafood, expertly prepared over the flame.",
-    "contorni-desc-page": "Carefully selected side dishes to complement your main course perfectly.",
-    "baby-desc-page": "Delicious and nutritious options specially prepared for our younger guests.",
+// Translation keys for Lo Stivale dei Sapori menu
+export type Language = 'en' | 'ar' | 'it' | 'fr';
+
+export const translations: Record<string, Record<Language, string>> = {
+  // Cover Page
+  'restaurant-name': {
+    it: 'Lo Stivale dei Sapori',
+    en: 'Lo Stivale dei Sapori',
+    ar: 'لو ستيفالي داي سابوري',
+    fr: 'Lo Stivale dei Sapori',
   },
-  ar: {
-    // Header
-    "restaurant-name": "لو ستيفال داي سابوري",
-    "season-year": "خريف 2025",
-    "cover-charge": "رسوم الغطاء (كوبيرتو): 2 يورو",
-    
-    // Navigation
-    "nav-cover": "الغلاف والمعلومات",
-    "nav-taglieri": "الصواني",
-    "nav-special": "أطباق خاصة",
-    "nav-tartare": "التارتار والزيتشونا",
-    "nav-bruschette": "البروشيتا",
-    "nav-primi": "الأطباق الأولى",
-    "nav-grigliate": "المشويات",
-    "nav-contorni": "الأطباق الجانبية",
-    "nav-baby": "قائمة الأطفال",
-    
-    // Cover & Info
-    "cover-title": "الغلاف والمعلومات",
-    "wait-message": "✨ انتظار يهم معنا. الانتظار لا يكون فارغاً أبداً. يتم تحضير كل طبق بعناية باستخدام مواد أولية طازجة ومختارة. الوقت الذي تقضونه في الانتظار يُملأ بتفانينا في تقديم تجربة أصيلة لكم.",
-    
-    // I Taglieri
-    "taglieri-title": "الصواني",
-    "calabria-docet": "كالابريا دوسيت (لشخصين)",
-    "calabria-docet-desc": "سوسبيساتا حلوة، نقانق حلوة، نقانق حارة، كابوكولو كالابريزي، فيله كالابريزي، بانسيتا كالابريزية، بيكورينو دي أنجو، بيكورينو غران ريزيرفا بياسنزا، جبنة تشاكافالو، مربى يدوي، عسل أكاشيا يدوي",
-    "piccola-calabria": "تالييري لا بيتشولا كالابريا",
-    "piccola-calabria-desc": "سوسبيساتا حلوة، نقانق حلوة، كابوكولو كالابريزي، فيله كالابريزي، بانسيتا كالابريزية، بيكورينو دي أنجو، جبنة تشاكافالو، مربى برتقال يدوي، عسل أكاشيا يدوي",
-    "vegetariano": "نباتي",
-    "vegetariano-desc": "كارباتشيو بنجر، خبز فريسيلي صغير، خضروات كالابريا بالزيت، خضار وجبن حسب توفر الموسم",
-    
-    // Special Platters
-    "special-title": "أطباق خاصة",
-    "stivale": "لو ستيفال داي سابوري (لشخصين)",
-    "stivale-desc": "لحم خام بارما 24 شهراً، كابوكولو مارتينا فرانكا، مورتاديللا باللوز والبستاشيو، بيكورينو دي أنجو، بيكورينو غران ريزيرفا بياسنزا، جبنة تشاكافالو، مربى يدوي، عسل أكاشيا يدوي",
-    "trilogi": "تريولوجي دي كرودو (لشخصين)",
-    "trilogi-desc": "كولاتيلو دي زيبيلو DOP، لحم خنزير أسود مقدد، لحم خنزير سينتا سينيزي مقدد مع جبنة بوراتا",
-    
-    // Tartare
-    "tartare-title": "التارتار",
-    "tartare-bovino": "تارتار دي بوفينو برازيليانو وتارتوف أومبري",
-    "tartare-bovino-desc": "تارتار لحمة برازيلية مع خضار مختلطة وتارتفل أومبريان",
-    "tartare-tonno": "تارتار دي تونو",
-    "tartare-tonno-desc": "تارتار تونة مع خضار مختلطة",
-    "carpaccio": "كارباتشيو دي بلاك أنغوس",
-    "carpaccio-desc": "أنغوس أسود مدخن، زيت الترافل، تارتفل أومبريان فاخر، جرجير",
-    "zizzona-title": "لا زيتشونا",
-    "zizzona": "لا زيتشونا دي باتي باجليا",
-    "zizzona-desc": "موزاريلا جرائدية كبيرة من باتي باجليا مع كابوكولو كالابريزي",
-    
-    // Bruschette
-    "bruschette-title": "البروشيتا (على خبز ألتامورا)",
-    "caciocavallo": "بروشيتا كون تشاكيوفالو",
-    "caciocavallo-desc": "خبز ألتامورا وجبنة سيلانو تشاكيوفالو",
-    "lardo": "بروشيتا كون لاردو دي باتانغرا",
-    "lardo-desc": "خبز ألتامورا ولارد باتانغرا",
-    "pomodori": "بروشيتا كون بومودوري",
-    "pomodori-desc": "خبز ألتامورا، طماطم شيري، زيت زيتون بكر ممتاز",
-    "calabrese": "بروشيتا كالابريز",
-    "calabrese-desc": "خبز ألتامورا مع كود أسلوب كالابريزي، بطاطس وزيتون",
-    "stivale-bruschetta": "بروشيتا لو ستيفال",
-    "stivale-bruschetta-desc": "خبز ألتامورا، شرائح أنشوفة كانتابريان، مربعات زبدة للتقديم الفردي",
-    
-    // Primi Piatti
-    "primi-title": "الأطباق الأولى",
-    "bacco": "سباغيتو باكو",
-    "bacco-desc": "سباغيتي مع نبيذ كالابريزي وزيتون مشوي",
-    "maccheroni": "ماكيرون، سالسيتشا كالابريزية وبوشيني ديللا سيلا",
-    "maccheroni-desc": "ماكيرون، سالسيتشا كالابريزية طازجة، بويشيني سيلا، زيت زيتون بكر ممتاز",
-    "orecchiette": "أوريشيتا كون تشيما دي رابا",
-    "orecchiette-desc": "معكرونة أوريشيتا، خضار الشالة، زيت زيتون بكر ممتاز، ثوم وفتات خبز",
-    
-    // Grigliate
-    "grigliate-title": "المشويات",
-    "calabria-griglia": "كالابريا الباربكيو",
-    "calabria-griglia-desc": "نقانق، همبرغر، بومبيتي، أضلاع خنزير سوداء",
-    "caciocavallo-griglia": "تشاكوفالو مشوي",
-    "caciocavallo-griglia-desc": "جبنة تشاكيوفالو مشوية، خضار مختلطة وزيت الترافل",
-    "fiorentina": "فيورنتينا",
-    "fiorentina-desc": "وزن بين 950 جم و 1250 جم",
-    "entrecote": "إنتريكوتي",
-    "entrecote-desc": "وزن بين 250 جم و 350 جم",
-    "tomahawk": "توماهوك",
-    "wagyu": "واجيو كوبه",
-    "picagna": "بيكانيا",
-    "picagna-desc": "وزن بين 290 جم و 330 جم",
-    "spigola": "سمكة باراموندي مشوية",
-    "spigola-desc": "سمكة باراموندي مشوية",
-    
-    // Contorni
-    "contorni-title": "الأطباق الجانبية",
-    "insalata": "سلطة مختلطة",
-    "insalata-desc": "خس، رديكيو، جرجير، طماطم شيري، جزر، خيار ملون",
-    "patate-forno": "بطاطس مشوية",
-    "patate-forno-desc": "بطاطس مشوية وإكليل الجبل",
-    "verdure": "خضروات موسمية",
-    "verdure-desc": "سيكوريا مطهية أو خضار الشالة المقلية",
-    "patate-mblacchiuse": "بطاطس مبلاكيوز",
-    "patate-mblacchiuse-desc": "فلفل وبطاطس مقلية - أسلوب تقليدي",
-    
-    // Baby Menu
-    "baby-title": "قائمة الأطفال",
-    "pasta-sugo": "معكرونة بالصلصة",
-    "pasta-sugo-desc": "معكرونة أوريشيتا بصلصة الطماطم",
-    "baby-hamburger": "همبرغر الأطفال",
-    "baby-hamburger-desc": "ساندويتش دجاج مع بطاطس مقلية",
-    
-    // Price
-    "price": "€",
-    
-    // Additional translations
-    "authentic-experience": "استمتع بأصيل الطعام الإيطالي المحضر بشغف وأفضل المكونات.",
-    "zizzona-1k": "زيزونا 1k",
-    "zizzona-1k-desc": "نسخة مميزة من زيزونا الخاصة بنا مع مكونات إضافية مميزة",
-    "taglieri-desc-page": "صواني فاخرة تضم أفضل اللحوم المقددة الإيطالية والأجبان المعتقة والمرافقات الحرفية.",
-    "special-desc-page": "أفضل اختياراتنا الحصرية والمكررة، المختارة لأكثر الأذواق تمييزاً.",
-    "tartare-desc-page": "تحضيرات التارتار الطازجة والرقيقة، تعرض أفضل المكونات الخام.",
-    "zizzona-desc-page": "طبق توقيعي يضم موزاريلا جاموس فاخرة مع نكهات كالابريا التقليدية.",
-    "bruschette-desc-page": "خبز ألتامورا محمص مع مكونات فاخرة والنكهات التقليدية.",
-    "primi-desc-page": "أطباق المعكرونة الإيطالية التقليدية المحضرة بوصفات أصيلة وأفضل المكونات.",
-    "grigliate-desc-page": "اختيارات مشوية فاخرة تضم أفضل قطع اللحم والمأكولات البحرية الطازجة، المحضرة بخبرة على اللهب.",
-    "contorni-desc-page": "أطباق جانبية مختارة بعناية لتكمل طبقك الرئيسي بشكل مثالي.",
-    "baby-desc-page": "خيارات لذيذة ومغذية مُحضرة خصيصاً لضيوفنا الصغار.",
+  'restaurant-year': {
+    it: '2026',
+    en: '2026',
+    ar: '2026',
+    fr: '2026',
   },
-  it: {
-    // Header
-    "restaurant-name": "Lo Stivale dei Sapori",
-    "season-year": "Autunno 2025",
-    "cover-charge": "Coperto: €2",
-    
-    // Navigation
-    "nav-cover": "Copertina & Info",
-    "nav-taglieri": "I Taglieri",
-    "nav-special": "Taglieri Speciali",
-    "nav-tartare": "Tartare & Zizzona",
-    "nav-bruschette": "Bruschette",
-    "nav-primi": "Primi Piatti",
-    "nav-grigliate": "Grigliate",
-    "nav-contorni": "Contorni",
-    "nav-baby": "Menu Baby",
-    
-    // Cover & Info
-    "cover-title": "Copertina & Info",
-    "wait-message": "✨ Un'attesa che vale. Da noi l'attesa non è mai vuota. Ogni piatto è preparato con cura utilizzando materie prime fresche e selezionate. Il tempo che aspetti è riempito dal nostro impegno per offrirti un'esperienza autentica.",
-    
-    // I Taglieri
-    "taglieri-title": "I Taglieri",
-    "calabria-docet": "Calabria Docet (per 2 persone)",
-    "calabria-docet-desc": "Soppressata dolce, salsiccia dolce, salsiccia piccante, capocollo calabrese, filetto calabrese, pancetta calabrese, Pecorino d'Angiò stagionato, Pecorino Piacenza Gran Riserva, caciocavallo, confetture artigianali, miele di acacia artigianale",
-    "piccola-calabria": "Tagliere La piccola Calabria",
-    "piccola-calabria-desc": "Soppressata dolce, salsiccia dolce, capocollo calabrese, filetto calabrese, pancetta calabrese, Pecorino d'Angiò stagionato, caciocavallo, marmellata di arance artigianale, miele di acacia artigianale",
-    "vegetariano": "Vegetariano",
-    "vegetariano-desc": "Carpaccio di barbabietola, piccoli friselli, verdure calabresi sott'olio, cruditè e formaggi secondo disponibilità stagionale",
-    
-    // Special Platters
-    "special-title": "Taglieri Speciali",
-    "stivale": "Lo Stivale dei Sapori (per 2 persone)",
-    "stivale-desc": "Prosciutto di Parma 24 mesi, capocollo di Martina Franca, mortadella con mandorle e pistacchio, Pecorino d'Angiò stagionato, Pecorino Piacenza Gran Riserva, caciocavallo, confetture artigianali, miele di acacia artigianale",
-    "trilogi": "Trilogi di Crudo (per 2 persone)",
-    "trilogi-desc": "Culatello di Zibello DOP, Prosciutto di Maiale Nero, Prosciutto di Cinta Senese con burrata",
-    
-    // Tartare
-    "tartare-title": "Le Tartare",
-    "tartare-bovino": "Tartare di Bovino brasiliano e Tartufo umbro",
-    "tartare-bovino-desc": "Fresche e delicate tartare di carne brasiliana, esaltate dai migliori ingredienti grezzi. O piatto firmato con mozzarella di bufala di pregio e sapori tradizionali della Calabria",
-    "tartare-tonno": "Tartare di tonno",
-    "tartare-tonno-desc": "Tartare di tonno con misticanza",
-    "carpaccio": "Carpaccio di Black Angus",
-    "carpaccio-desc": "Black Angus affumicato, olio tartufato, tartufo umbro pregiato, rucola",
-    "zizzona-title": "La Zizzona",
-    "zizzona": "La Zizzona di Battipaglia",
-    "zizzona-desc": "Zizzona di bufala di Battipaglia con capocollo calabrese",
-    
-    // Bruschette
-    "bruschette-title": "Le Bruschette (su pane di Altamura)",
-    "caciocavallo": "Bruschette con caciocavallo",
-    "caciocavallo-desc": "Pane di Altamura e caciocavallo silano",
-    "lardo": "Bruschette con Lardo di Patanegra",
-    "lardo-desc": "Pane di Altamura e lardo di Patanegra",
-    "pomodori": "Bruschette con pomodori",
-    "pomodori-desc": "Pane di Altamura, pomodorini, olio extravergine di oliva",
-    "calabrese": "Bruschetta Calabrese",
-    "calabrese-desc": "Pane di Altamura con baccalà alla calabrese, patate e olive",
-    "stivale-bruschetta": "Bruschetta Lo Stivale",
-    "stivale-bruschetta-desc": "Pane di Altamura, filetti di alici del Cantabrico, quadretti di burro monoporzione",
-    
-    // Primi Piatti
-    "primi-title": "I Primi Piatti",
-    "bacco": "Spaghetto Bacco",
-    "bacco-desc": "spaghetto al vino calabrese e olive infornate",
-    "maccheroni": "Maccheroni, salsiccia calabrese e porcini della Sila",
-    "maccheroni-desc": "maccheroni, salsiccia calabrese fresca, funghi porcini della Sila, olio extravergine di oliva",
-    "orecchiette": "Orecchiette con cime di rapa",
-    "orecchiette-desc": "orecchiette, cime di rapa, olio extravergine di oliva, aglio e mollica di pane",
-    
-    // Grigliate
-    "grigliate-title": "Le Grigliate",
-    "calabria-griglia": "Calabria alla griglia",
-    "calabria-griglia-desc": "salsiccia, hamburger, bombette, costine di maiale nero",
-    "caciocavallo-griglia": "Caciocavallo alla griglia",
-    "caciocavallo-griglia-desc": "caciocavallo alla piastra, misticanza e olio tartufato",
-    "fiorentina": "Fiorentina",
-    "fiorentina-desc": "peso tra 950g e 1250g",
-    "entrecote": "Entrecôte",
-    "entrecote-desc": "peso tra 250g e 350g",
-    "tomahawk": "Tomahawk",
-    "wagyu": "Wagyu Kobe",
-    "picagna": "Picagna",
-    "picagna-desc": "peso tra 290g e 330g",
-    "spigola": "Spigola al forno",
-    "spigola-desc": "Spigola al forno",
-    
-    // Contorni
-    "contorni-title": "I Contorni",
-    "insalata": "Insalata mista",
-    "insalata-desc": "lattuga, radicchio, rucola, pomodorini, carote, meloncelles",
-    "patate-forno": "Patate al forno",
-    "patate-forno-desc": "patate al forno e rosmarino",
-    "verdure": "Verdure di stagione",
-    "verdure-desc": "cicoria ripassata o cime di rapa saltate",
-    "patate-mblacchiuse": "Patate \"mblacchiuse\"",
-    "patate-mblacchiuse-desc": "peperoni e patate fritte - stile tradizionale",
-    
-    // Baby Menu
-    "baby-title": "Menu Baby",
-    "pasta-sugo": "Pasta al sugo",
-    "pasta-sugo-desc": "orecchiette al pomodoro",
-    "baby-hamburger": "Baby Hamburger",
-    "baby-hamburger-desc": "hamburger di pollo con contorno di patatine",
-    
-    // Price
-    "price": "€",
-    
-    // Additional translations
-    "authentic-experience": "Scopri l'autentica cucina italiana preparata con passione e i migliori ingredienti.",
-    "zizzona-1k": "Zizzona 1k",
-    "zizzona-1k-desc": "Versione premium della nostra Zizzona con ingredienti extra speciali",
-    "taglieri-desc-page": "Squisiti taglieri con salumi italiani di prima qualità, formaggi stagionati e accompagnamenti artigianali.",
-    "special-desc-page": "Le nostre selezioni più esclusive e raffinate, curate per i palati più esigenti.",
-    "tartare-desc-page": "Preparazioni di tartare fresche e delicate, che mettono in risalto le migliori materie prime.",
-    "zizzona-desc-page": "Un piatto d'autore con mozzarella di bufala premium e sapori tradizionali calabresi.",
-    "bruschette-desc-page": "Pane di Altamura tostato condito con ingredienti di prima qualità e sapori tradizionali.",
-    "primi-desc-page": "Primi piatti della tradizione italiana preparati con ricette autentiche e i migliori ingredienti.",
-    "grigliate-desc-page": "Selezioni alla griglia premium con i migliori tagli di carne e frutti di mare freschi, preparati sapientemente sulla fiamma.",
-    "contorni-desc-page": "Contorni accuratamente selezionati per completare perfettamente il vostro piatto principale.",
-    "baby-desc-page": "Opzioni deliziose e nutrienti preparate appositamente per i nostri ospiti più piccoli.",
+  'cover-title': {
+    it: "✨ Un'attesa che conta",
+    en: '✨ A Wait That Matters',
+    ar: '✨ انتظار له قيمة',
+    fr: '✨ Une Attente Qui Compte',
   },
-  fr: {
-    // Header
-    "restaurant-name": "Lo Stivale dei Sapori",
-    "season-year": "Automne 2025",
-    "cover-charge": "Couvert (Coperto): 2 €",
-    
-    // Navigation
-    "nav-cover": "Couverture & Infos",
-    "nav-taglieri": "Les Plateaux",
-    "nav-special": "Plateaux Spéciaux",
-    "nav-tartare": "Tartares & Zizzona",
-    "nav-bruschette": "Bruschettas",
-    "nav-primi": "Plats Principaux",
-    "nav-grigliate": "Grillades",
-    "nav-contorni": "Accompagnements",
-    "nav-baby": "Menu Enfant",
-    
-    // Cover & Info
-    "cover-title": "Couverture & Infos",
-    "wait-message": "✨ Une attente qui vaut la peine. Chez nous, l'attente n'est jamais vide. Chaque plat est préparé avec soin en utilisant des matières premières fraîches et sélectionnées. Le temps que vous passez à attendre est comblé par notre engagement à vous offrir une expérience authentique.",
-    
-    // I Taglieri
-    "taglieri-title": "Les Plateaux (Plateaux)",
-    "calabria-docet": "Calabria Docet (pour 2 personnes)",
-    "calabria-docet-desc": "sopressata douce, saucisse douce, saucisse épicée, coppa calabraise, filet calabrais, pancetta calabraise, Pecorino d'Angiò vieilli, Pecorino Piacenza Gran Riserva, fromage caciocavallo, confitures artisanales, miel d'acacia artisanal",
-    "piccola-calabria": "Taglière La piccola Calabria",
-    "piccola-calabria-desc": "sopressata douce, saucisse douce, coppa calabraise, filet calabrais, pancetta calabraise, Pecorino d'Angiò vieilli, fromage caciocavallo, confiture d'orange artisanale, miel d'acacia artisanal",
-    "vegetariano": "Végétarien",
-    "vegetariano-desc": "carpaccio de betterave, petites friselles, légumes calabrais à l'huile, crudités et fromages selon la disponibilité saisonnière",
-    
-    // Special Platters
-    "special-title": "Plateaux Spéciaux",
-    "stivale": "Lo Stivale dei Sapori (pour 2 personnes)",
-    "stivale-desc": "jambon de Parme 24 mois, coppa Martina Franca, mortadelle aux amandes et pistaches, Pecorino d'Angiò vieilli, Pecorino Piacenza Gran Riserva, fromage caciocavallo, confitures artisanales, miel d'acacia artisanal",
-    "trilogi": "Trilogie de Cru (pour 2 personnes)",
-    "trilogi-desc": "culatello di Zibello DOP, jambon cru de cochon noir, jambon cru de Cinta Senese avec burrata",
-    
-    // Tartare
-    "tartare-title": "Les Tartares",
-    "tartare-bovino": "Tartare de boeuf brésilien et truffe ombrienne",
-    "tartare-bovino-desc": "tartare de boeuf brésilien avec mélange de jeunes pousses et truffe ombrienne",
-    "tartare-tonno": "Tartare de thon",
-    "tartare-tonno-desc": "tartare de thon avec mélange de jeunes pousses",
-    "carpaccio": "Carpaccio de Black Angus",
-    "carpaccio-desc": "Black Angus fumé, huile de truffe, truffe ombrienne premium, roquette",
-    "zizzona-title": "La Zizzona",
-    "zizzona": "La Zizzona de Battipaglia",
-    "zizzona-desc": "grande mozzarella de bufflonne de Battipaglia avec coppa calabraise",
-    
-    // Bruschette
-    "bruschette-title": "Les Bruschettas (sur pain Altamura)",
-    "caciocavallo": "Bruschetta au caciocavallo",
-    "caciocavallo-desc": "pain Altamura et fromage caciocavallo Silano",
-    "lardo": "Bruschetta au lardo de Patanegra",
-    "lardo-desc": "pain Altamura et lardo de Patanegra",
-    "pomodori": "Bruschetta aux tomates",
-    "pomodori-desc": "pain Altamura, tomates cerises, huile d'olive vierge extra",
-    "calabrese": "Bruschetta Calabraise",
-    "calabrese-desc": "pain Altamura avec morue à la calabraise, pommes de terre et olives",
-    "stivale-bruschetta": "Bruschetta Lo Stivale",
-    "stivale-bruschetta-desc": "pain Altamura, filets d'anchois du Cantabrique, carrés de beurre individuels",
-    
-    // Primi Piatti
-    "primi-title": "Les Plats Principaux",
-    "bacco": "Spaghetto Bacco",
-    "bacco-desc": "spaghetti au vin calabrais et olives rôties",
-    "maccheroni": "Maccheronis, saucisse calabraise et cèpes de la Sila",
-    "maccheroni-desc": "maccheronis, saucisse calabraise fraîche, cèpes de la Sila, huile d'olive vierge extra",
-    "orecchiette": "Orecchiettes aux cimes de rape",
-    "orecchiette-desc": "pâtes orecchiettes, cimes de rape, huile d'olive vierge extra, ail et chapelure",
-    
-    // Grigliate
-    "grigliate-title": "Les Grillades",
-    "calabria-griglia": "Calabre grillée",
-    "calabria-griglia-desc": "saucisses, hamburger, bombettes, côtes de porc noir",
-    "caciocavallo-griglia": "Caciocavallo grillé",
-    "caciocavallo-griglia-desc": "fromage caciocavallo grillé, mélange de jeunes pousses et huile de truffe",
-    "fiorentina": "Florentine",
-    "fiorentina-desc": "poids entre 950g et 1250g",
-    "entrecote": "Entrecôte",
-    "entrecote-desc": "poids entre 250g et 350g",
-    "tomahawk": "Tomahawk",
-    "wagyu": "Wagyu Kobe",
-    "picagna": "Picanha",
-    "picagna-desc": "poids entre 290g et 330g",
-    "spigola": "Loup de mer au four",
-    "spigola-desc": "Loup de mer au four",
-    
-    // Contorni
-    "contorni-title": "Les Accompagnements",
-    "insalata": "Salade mixte",
-    "insalata-desc": "laitue, rouge, roquette, tomates cerises, carottes, meloncelles/concombres-melons",
-    "patate-forno": "Pommes de terre au four",
-    "patate-forno-desc": "pommes de terre rôties et romarin",
-    "verdure": "Légumes de saison",
-    "verdure-desc": "chicorée braisée ou cimes de rape sautées",
-    "patate-mblacchiuse": "Pommes de terre \"mblacchiuse\"",
-    "patate-mblacchiuse-desc": "poivrons et pommes de terre frits - style traditionnel",
-    
-    // Baby Menu
-    "baby-title": "Menu Enfant",
-    "pasta-sugo": "Pâtes à la sauce",
-    "pasta-sugo-desc": "orecchiettes à la sauce tomate",
-    "baby-hamburger": "Hamburger Enfant",
-    "baby-hamburger-desc": "burger de poulet avec accompagnement de frites",
-    
-    // Price
-    "price": "€",
-    
-    // Additional translations
-    "authentic-experience": "Découvrez une cuisine italienne authentique préparée avec passion et les meilleurs ingrédients.",
-    "zizzona-1k": "Zizzona 1k",
-    "zizzona-1k-desc": "Version premium de notre Zizzona signature avec des ingrédients extra spéciaux",
-    "taglieri-desc-page": "Des plateaux exquis composés de charcuteries italiennes de qualité supérieure, de fromages affinés et d'accompagnements artisanaux.",
-    "special-desc-page": "Nos sélections les plus exclusives et raffinées, conçues pour les palais les plus exigeants.",
-    "tartare-desc-page": "Des préparations de tartares frais et délicats, mettant en valeur les meilleurs ingrédients crus.",
-    "zizzona-desc-page": "Un plat signature composé de mozzarella de bufflonne de qualité supérieure aux saveurs traditionnelles de Calabre.",
-    "bruschette-desc-page": "Pain d'Altamura grillé garni d'ingrédients de qualité supérieure et de saveurs traditionnelles.",
-    "primi-desc-page": "Plats de pâtes italiennes traditionnelles préparés selon des recettes authentiques avec les meilleurs ingrédients.",
-    "grigliate-desc-page": "Sélections de grillades de qualité supérieure comprenant les meilleures coupes de viande et des fruits de mer frais, préparés avec expertise à la flamme.",
-    "contorni-desc-page": "Des accompagnements soigneusement sélectionnés pour compléter parfaitement votre plat principal.",
-    "baby-desc-page": "Des options délicieuses et nutritives spécialement préparées pour nos plus jeunes clients.",
-  }
+  'cover-description': {
+    it: 'Da noi l\'attesa non è vuota. Ogni piatto è preparato con cura utilizzando materie prime fresche e selezionate.\nIl tempo che aspetti è pieno del nostro impegno per offrirti un\'esperienza autentica.',
+    en: 'With us, waiting is never empty. Every dish is carefully prepared using fresh and selected ingredients.\nThe time you wait is filled with our commitment to offer you an authentic experience.',
+    ar: 'لدينا الانتظار ليس فارغاً. كل طبق يُحضّر بعناية باستخدام مكونات طازجة ومختارة.\nالوقت الذي تنتظره مليء بالتزامنا لتقديم تجربة أصيلة لك.',
+    fr: "Chez nous, l'attente n'est jamais vide. Chaque plat est soigneusement préparé avec des ingrédients frais et sélectionnés.\nLe temps d'attente est rempli de notre engagement à vous offrir une expérience authentique.",
+  },
+  'coperto': {
+    it: 'Coperto — € 2,5',
+    en: 'Cover Charge — € 2.5',
+    ar: 'رسوم التغطية — € 2,5',
+    fr: 'Couvert — € 2,5',
+  },
+  'enter-menu': {
+    it: 'Entra nel Menu',
+    en: 'Enter Menu',
+    ar: 'الدخول إلى القائمة',
+    fr: 'Entrer dans le Menu',
+  },
+
+  // Navigation
+  'nav-home': {
+    it: 'Home',
+    en: 'Home',
+    ar: 'الرئيسية',
+    fr: 'Accueil',
+  },
+  'nav-tartare': {
+    it: 'Tartare',
+    en: 'Tartare',
+    ar: 'التارتار',
+    fr: 'Tartare',
+  },
+  'nav-bruschette': {
+    it: 'Bruschette',
+    en: 'Bruschetta',
+    ar: 'البروشيتا',
+    fr: 'Bruschetta',
+  },
+  'nav-taglieri': {
+    it: 'Taglieri',
+    en: 'Cutting Boards',
+    ar: 'ألواح التقديم',
+    fr: 'Planches',
+  },
+  'nav-primi': {
+    it: 'Primi Piatti',
+    en: 'First Courses',
+    ar: 'الأطباق الأولى',
+    fr: 'Premiers Plats',
+  },
+  'nav-grigliate': {
+    it: 'Grigliate',
+    en: 'Grills',
+    ar: 'المشويات',
+    fr: 'Grillades',
+  },
+  'nav-contorni': {
+    it: 'Contorni',
+    en: 'Side Dishes',
+    ar: 'الأطباق الجانبية',
+    fr: 'Accompagnements',
+  },
+  'nav-baby': {
+    it: 'Baby Menu',
+    en: 'Baby Menu',
+    ar: 'قائمة الأطفال',
+    fr: 'Menu Enfant',
+  },
+
+  // Tartare Page
+  'tartare-title': {
+    it: 'Le Tartare',
+    en: 'Tartares',
+    ar: 'التارتار',
+    fr: 'Les Tartares',
+  },
+  'tartare-desc-page': {
+    it: 'Selezione di tartare e carpacci preparati al momento',
+    en: 'Selection of tartares and carpaccios prepared fresh',
+    ar: 'تشكيلة من التارتار والكارباتشو المحضرة طازجة',
+    fr: 'Sélection de tartares et carpaccios préparés fraîchement',
+  },
+  'tartare-bovino': {
+    it: 'Tartare di Bovino brasiliano e Tartufo umbro',
+    en: 'Brazilian Beef Tartare with Umbrian Truffle',
+    ar: 'تارتار لحم البقر البرازيلي مع الكمأ الأومبري',
+    fr: 'Tartare de Bœuf Brésilien et Truffe Ombrienne',
+  },
+  'tartare-bovino-desc': {
+    it: 'tartare di bovino brasiliano con misticanza e tartufo',
+    en: 'Brazilian beef tartare with mixed greens and truffle',
+    ar: 'تارتار لحم بقري برازيلي مع خضر مشكلة وكمأ',
+    fr: 'Tartare de bœuf brésilien avec salade composée et truffe',
+  },
+  'tartare-tonno': {
+    it: 'Tartare di tonno',
+    en: 'Tuna Tartare',
+    ar: 'تارتار التونة',
+    fr: 'Tartare de Thon',
+  },
+  'tartare-tonno-desc': {
+    it: 'tonno con misticanza',
+    en: 'tuna with mixed greens',
+    ar: 'تونة مع خضر مشكلة',
+    fr: 'thon avec salade composée',
+  },
+  'carpaccio': {
+    it: 'Carpaccio di Black Angus',
+    en: 'Black Angus Carpaccio',
+    ar: 'كارباتشو بلاك أنجوس',
+    fr: 'Carpaccio de Black Angus',
+  },
+  'carpaccio-desc': {
+    it: 'black angus affumicato, olio al tartufo, tartufo umbro di prima scelta, rucola',
+    en: 'smoked black angus, truffle oil, premium umbrian truffle, arugula',
+    ar: 'بلاك أنجوس مدخن، زيت كمأ، كمأ أومبري فاخر، جرجير',
+    fr: 'black angus fumé, huile à la truffe, truffe ombrienne de premier choix, roquette',
+  },
+
+  // Zizzona Section
+  'zizzona-title': {
+    it: 'La Zizzona',
+    en: 'The Zizzona',
+    ar: 'الزيتزونا',
+    fr: 'La Zizzona',
+  },
+  'zizzona-desc-page': {
+    it: 'Specialità campana di mozzarella gigante',
+    en: 'Campanian specialty of giant mozzarella',
+    ar: ' spécialité campanienne de mozzarella géante',
+    fr: 'Spécialité campanienne de mozzarella géante',
+  },
+  'zizzona': {
+    it: 'La Zizzona di Battipaglia',
+    en: 'Zizzona from Battipaglia',
+    ar: 'الزيتزونا من باتيباليا',
+    fr: 'La Zizzona de Battipaglia',
+  },
+  'zizzona-desc': {
+    it: 'Zizzona di Battipaglia con capocollo calabrese',
+    en: 'Zizzona from Battipaglia with Calabrian capocollo',
+    ar: 'زيتزونا من باتيباليا مع كابوكولو كالابري',
+    fr: 'Zizzona de Battipaglia avec capocollo calabrais',
+  },
+
+  // Bruschette Page
+  'bruschette-title': {
+    it: 'Le Bruschette',
+    en: 'Bruschettas',
+    ar: 'البروشيتا',
+    fr: 'Les Bruschettas',
+  },
+  'bruschette-subtitle': {
+    it: '(con pane di Altamura)',
+    en: '(with Altamura bread)',
+    ar: '(مع خبز ألتامورا)',
+    fr: '(avec pain d\'Altamura)',
+  },
+  'bruschette-desc-page': {
+    it: 'Bruschette tradizionali con pane di Altamura DOP',
+    en: 'Traditional bruschettas with Altamura DOP bread',
+    ar: 'بروشيتا تقليدية مع خبز ألتامورا DOP',
+    fr: 'Bruschettas traditionnelles avec pain d\'Altamura DOP',
+  },
+  'caciocavallo': {
+    it: 'Bruschette con caciocavallo',
+    en: 'Bruschetta with Caciocavallo',
+    ar: 'بروشيتا مع كاتشوكافالو',
+    fr: 'Bruschetta au Caciocavallo',
+  },
+  'caciocavallo-desc': {
+    it: 'pane di Altamura e caciocavallo Silano',
+    en: 'Altamura bread and Silano caciocavallo',
+    ar: 'خبز ألتامورا وكاتشوكافالو سيلانو',
+    fr: 'pain d\'Altamura et caciocavallo Silano',
+  },
+  'lardo': {
+    it: 'Bruschette con Lardo di Patanegra',
+    en: 'Bruschetta with Patanegra Lardo',
+    ar: 'بروشيتا مع لاردو باتانيغرا',
+    fr: 'Bruschetta au Lardo de Patanegra',
+  },
+  'lardo-desc': {
+    it: 'pane di Altamura e lardo Patanegra',
+    en: 'Altamura bread and Patanegra lardo',
+    ar: 'خبز ألتامورا ولاردو باتانيغرا',
+    fr: 'pain d\'Altamura et lardo Patanegra',
+  },
+  'pomodori': {
+    it: 'Bruschette con pomodori',
+    en: 'Bruschetta with Tomatoes',
+    ar: 'بروشيتا مع الطماطم',
+    fr: 'Bruschetta aux Tomates',
+  },
+  'pomodori-desc': {
+    it: 'pane di Altamura, ciliegini, olio di oliva evo',
+    en: 'Altamura bread, cherry tomatoes, extra virgin olive oil',
+    ar: 'خبز ألتامورا، طماطم كرزية، زيت زيتون بكر ممتاز',
+    fr: 'pain d\'Altamura, tomates cerises, huile d\'olive extra vierge',
+  },
+  'calabrese': {
+    it: 'Bruschetta Calabrese',
+    en: 'Calabrian Bruschetta',
+    ar: 'بروشيتا كالابرية',
+    fr: 'Bruschetta Calabraise',
+  },
+  'calabrese-desc': {
+    it: 'pane di Altamura con baccalà alla calabrese, patate e olive',
+    en: 'Altamura bread with Calabrian-style cod, potatoes and olives',
+    ar: 'خبز ألتامورا مع سمك القد بالكالابرية، بطاطس وزيتون',
+    fr: 'pain d\'Altamura avec morue à la calabraise, pommes de terre et olives',
+  },
+  'stivale-bruschetta': {
+    it: 'Bruschetta Lo Stivale',
+    en: 'Lo Stivale Bruschetta',
+    ar: 'بروشيتا لو ستيفالي',
+    fr: 'Bruschetta Lo Stivale',
+  },
+  'stivale-bruschetta-desc': {
+    it: 'pane di Altamura, filetti di acciughe Cantabrico, burro a quadretti mono',
+    en: 'Altamura bread, Cantabrico anchovy fillets, single-serving butter cubes',
+    ar: 'خبز ألتامورا، شرائح أنشوفة كانتابريكو، مكعبات زبدة فردية',
+    fr: 'pain d\'Altamura, filets d\'anchois de Cantabrie, cubes de beurre individuels',
+  },
+
+  // Taglieri Page
+  'taglieri-title': {
+    it: 'I Taglieri',
+    en: 'Cutting Boards',
+    ar: 'ألواح التقديم',
+    fr: 'Les Planches',
+  },
+  'taglieri-desc-page': {
+    it: 'Selezione di salumi e formaggi italiani',
+    en: 'Selection of Italian cured meats and cheeses',
+    ar: 'تشكيلة من اللحوم المقددة والأجبان الإيطالية',
+    fr: 'Sélection de charcuteries et fromages italiens',
+  },
+  'calabria-docet': {
+    it: 'Calabria Docet',
+    en: 'Calabria Docet',
+    ar: 'كالابريا دوسيت',
+    fr: 'Calabria Docet',
+  },
+  'calabria-docet-desc': {
+    it: 'soppressata dolce, salsiccia dolce, salsiccia piccante, capocollo calabrese, filetto calabrese, pancetta calabrese, pecorino d\'Angiò stagionato, pecorino di Piacenza Gran riserva, caciocavallo, marmellate artigianali, miele di acacia artigianale',
+    en: 'sweet soppressata, sweet sausage, spicy sausage, Calabrian capocollo, Calabrian fillet, Calabrian pancetta, aged Pecorino d\'Angiò, Pecorino di Piacenza Gran Riserva, caciocavallo, artisan jams, artisan acacia honey',
+    ar: 'سوببريساتا حلوة، سجق حلو، سجق حار، كابوكولو كالابري، فيليه كالابري، بانتشيتا كالابرية، بيكورينو دانجو معتق، بيكورينو دي بياتشنزا جراند ريزيرفا، كاتشوكافالو، مربيات حرفية، عسل أكاسيا حرفي',
+    fr: 'soppressata douce, saucisse douce, saucisse piquante, capocollo calabrais, filet calabrais, pancetta calabraise, pecorino d\'Angiò affiné, pecorino di Piacenza Gran Riserva, caciocavallo, confitures artisanales, miel d\'acacia artisanal',
+  },
+  'calabria-docet-serves': {
+    it: '(per 2 persone)',
+    en: '(for 2 people)',
+    ar: '(لشخصين)',
+    fr: '(pour 2 personnes)',
+  },
+  'piccola-calabria': {
+    it: 'Tagliere La piccola Calabria',
+    en: 'Little Calabria Board',
+    ar: 'لوح كالابريا الصغير',
+    fr: 'Planche La Piccola Calabria',
+  },
+  'piccola-calabria-desc': {
+    it: 'soppressata dolce, salsiccia dolce, capocollo calabrese, filetto calabrese, pancetta calabrese, pecorino d\'Angiò stagionato, caciocavallo, marmellata di arancia artigianale, miele di acacia artigianale',
+    en: 'sweet soppressata, sweet sausage, Calabrian capocollo, Calabrian fillet, Calabrian pancetta, aged Pecorino d\'Angiò, caciocavallo, artisan orange marmalade, artisan acacia honey',
+    ar: 'سوببريساتا حلوة، سجق حلو، كابوكولو كالابري، فيليه كالابري، بانتشيتا كالابرية، بيكورينو دانجو معتق، كاتشوكافالو، مربى برتقال حرفي، عسل أكاسيا حرفي',
+    fr: 'soppressata douce, saucisse douce, capocollo calabrais, filet calabrais, pancetta calabraise, pecorino d\'Angiò affiné, caciocavallo, marmelade d\'orange artisanale, miel d\'acacia artisanal',
+  },
+  'vegetariano': {
+    it: 'Vegetariano',
+    en: 'Vegetarian',
+    ar: 'نباتي',
+    fr: 'Végétarien',
+  },
+  'vegetariano-desc': {
+    it: 'carciofi, sott\'olio calabresi e novità dello cheff secondo disponibilità stagionale',
+    en: 'artichokes, Calabrian preserved vegetables and chef\'s seasonal specialties',
+    ar: 'أرضي شوكي، خضروات كالابرية محفوظة، وموسميات الشيف حسب المتوفر',
+    fr: 'artichauts, légumes calabrais conservés et spécialités saisonnières du chef',
+  },
+  'stivale-tagliere': {
+    it: 'Lo Stivale dei Sapori',
+    en: 'Lo Stivale dei Sapori',
+    ar: 'لو ستيفالي داي سابوري',
+    fr: 'Lo Stivale dei Sapori',
+  },
+  'stivale-tagliere-desc': {
+    it: 'prosciutto crudo di Parma 24 mesi, capocollo di Martina Franca, mortadella con mandorle e pistacchio, pecorino d\'Angiò stagionato, pecorino di Piacenza Gran riserva, caciocavallo, marmellate artigianali, miele di acacia artigianale',
+    en: '24-month Parma ham, Martina Franca capocollo, mortadella with almonds and pistachio, aged Pecorino d\'Angiò, Pecorino di Piacenza Gran Riserva, caciocavallo, artisan jams, artisan acacia honey',
+    ar: 'بروشوتو بارما 24 شهر، كابوكولو مارتينا فرانكا، مرتديلا مع لوز وفستق، بيكورينو دانجو معتق، بيكورينو دي بياتشنزا جراند ريزيرفا، كاتشوكافالو، مربيات حرفية، عسل أكاسيا حرفي',
+    fr: 'jambon cru de Parme 24 mois, capocollo de Martina Franca, mortadelle aux amandes et pistache, pecorino d\'Angiò affiné, pecorino di Piacenza Gran Riserva, caciocavallo, confitures artisanales, miel d\'acacia artisanal',
+  },
+  'trilogia-crudo': {
+    it: 'Trilogi di Crudo',
+    en: 'Raw Trilogy',
+    ar: 'ثلاثية النيء',
+    fr: 'Trilogie de Cru',
+  },
+  'trilogia-crudo-desc': {
+    it: 'culatello di Zibello dop con bocconcini di bufala di Battipaglia',
+    en: 'Culatello di Zibello DOP with Battipaglia buffalo mozzarella bites',
+    ar: 'كولاتيلو دي زيبيللو DOP مع قطع موزاريلا جاموس باتيباليا',
+    fr: 'Culatello di Zibello DOP avec bouchées de mozzarella de buffle de Battipaglia',
+  },
+  'tagliere-umbro': {
+    it: 'Tagliere Umbro',
+    en: 'Umbrian Board',
+    ar: 'اللوح الأومبري',
+    fr: 'Planche Ombrienne',
+  },
+  'tagliere-umbro-desc': {
+    it: 'prosciutto crudo, capocollo, salame, soppressata, morbidone Umbro, pecorino d\'Angiò stagionato, pecorino di Piacenza Gran riserva, caciocavallo, marmellate artigianali, miele di acacia artigianale',
+    en: 'raw ham, capocollo, salami, soppressata, Morbidone Umbro, aged Pecorino d\'Angiò, Pecorino di Piacenza Gran Riserva, caciocavallo, artisan jams, artisan acacia honey',
+    ar: 'لحم مقدد، كابوكولو، سلامي، سوبريساتا، موربيدوني أومبرو، بيكورينو دانجو معتق، بيكورينو دي بياتشنزا جراند ريزيرفا، كاتشوكافالو، مربيات حرفية، عسل أكاسيا حرفي',
+    fr: 'jambon cru, capocollo, salami, soppressata, Morbidone Umbro, pecorino d\'Angiò affiné, pecorino di Piacenza Gran Riserva, caciocavallo, confitures artisanales, miel d\'acacia artisanal',
+  },
+
+  // Primi Piatti Page
+  'primi-title': {
+    it: 'I Primi Piatti',
+    en: 'First Courses',
+    ar: 'الأطباق الأولى',
+    fr: 'Les Premiers Plats',
+  },
+  'primi-desc-page': {
+    it: 'Pasta fresca e primi piatti della tradizione italiana',
+    en: 'Fresh pasta and traditional Italian first courses',
+    ar: 'باستا طازجة وأطباق أولى من التقاليد الإيطالية',
+    fr: 'Pâtes fraîches et premiers plats de la tradition italienne',
+  },
+  'spaghetto-bacco': {
+    it: 'Spaghetto Bacco',
+    en: 'Bacco Spaghetti',
+    ar: 'سباغيتو باكو',
+    fr: 'Spaghetti Bacco',
+  },
+  'spaghetto-bacco-desc': {
+    it: 'spaghetto con vino calabrese ed olive infornate',
+    en: 'spaghetti with Calabrian wine and baked olives',
+    ar: 'سباغيتي مع نبيذ كالابري وزيتون مخبوز',
+    fr: 'spaghetti avec vin calabrais et olives cuites au four',
+  },
+  'maccheroni-porcini': {
+    it: 'Maccheroni, salsiccia calabrese e porcini della Sila',
+    en: 'Maccheroni, Calabrian Sausage and Sila Porcini',
+    ar: 'مكاروني، سجق كالابري وبورسيني سيلا',
+    fr: 'Maccheroni, Saucisse Calabraise et Porcini de la Sila',
+  },
+  'maccheroni-porcini-desc': {
+    it: 'maccheroni, salsiccia fresca calabrese, porcini della Sila, olio d\'oliva evo',
+    en: 'maccheroni, fresh Calabrian sausage, Sila porcini mushrooms, extra virgin olive oil',
+    ar: 'مكاروني، سجق كالابري طازج، فطر بورسيني سيلا، زيت زيتون بكر ممتاز',
+    fr: 'maccheroni, saucisse calabraise fraîche, champignons porcini de la Sila, huile d\'olive extra vierge',
+  },
+  'orecchiette-rapa': {
+    it: 'Orecchiette con cime di rapa',
+    en: 'Orecchiette with Turnip Tops',
+    ar: 'أوريكييتي مع قمم اللفت',
+    fr: 'Orecchiette aux Cimes de Rave',
+  },
+  'orecchiette-rapa-desc': {
+    it: 'orecchiette, cime di rapa, olio d\'oliva evo, aglio e granella di pane',
+    en: 'orecchiette, turnip tops, extra virgin olive oil, garlic and breadcrumbs',
+    ar: 'أوريكييتي، قمم اللفت، زيت زيتون بكر ممتاز، ثوم وفتات خبز',
+    fr: 'orecchiette, cimes de rave, huile d\'olive extra vierge, ail et chapelure',
+  },
+  'spaghetto-nduja': {
+    it: 'Spaghetto N\'duja',
+    en: 'N\'duja Spaghetti',
+    ar: 'سباغيتو ندوجا',
+    fr: 'Spaghetti N\'duja',
+  },
+  'spaghetto-nduja-desc': {
+    it: 'Spaghetto, pomodorini, olio d\'oliva evo, N\'duja, granella di mandorle tostate, aglio e granella di pane',
+    en: 'Spaghetti, cherry tomatoes, extra virgin olive oil, N\'duja, toasted almond crumbs, garlic and breadcrumbs',
+    ar: 'سباغيتي، طماطم كرزية، زيت زيتون بكر ممتاز، ندوجا، فتات لوز محمص، ثوم وفتات خبز',
+    fr: 'Spaghetti, tomates cerises, huile d\'olive extra vierge, N\'duja, chapelure d\'amandes grillées, ail et chapelure',
+  },
+  'pastora-calabrese': {
+    it: 'La pastora Calabrese',
+    en: 'The Calabrian Shepherdess',
+    ar: 'الراعية الكالابرية',
+    fr: 'La Bergère Calabraise',
+  },
+  'pastora-calabrese-desc': {
+    it: 'Spaghetto, scamorsa affumicata, ricotta, rucola, e olive infornate',
+    en: 'Spaghetti, smoked scamorza, ricotta, arugula, and baked olives',
+    ar: 'سباغيتي، سكامورزا مدخنة، ريكوتا، جرجير، وزيتون مخبوز',
+    fr: 'Spaghetti, scamorza fumée, ricotta, roquette et olives cuites au four',
+  },
+  'spaghetto-stivale': {
+    it: 'Spaghetto lo stivale',
+    en: 'Lo Stivale Spaghetti',
+    ar: 'سباغيتو لو ستيفالي',
+    fr: 'Spaghetti Lo Stivale',
+  },
+  'spaghetto-stivale-desc': {
+    it: 'spaghetto, olio d\'oliva evo, aglio, alici del Cantabrico, olive infornate e mollica di pane',
+    en: 'spaghetti, extra virgin olive oil, garlic, Cantabrico anchovies, baked olives and breadcrumbs',
+    ar: 'سباغيتي، زيت زيتون بكر ممتاز، ثوم، أنشوفة كانتابريكو، زيتون مخبوز وفتات خبز',
+    fr: 'spaghetti, huile d\'olive extra vierge, ail, anchois de Cantabrie, olives cuites au four et chapelure',
+  },
+
+  // Grigliate Page
+  'grigliate-title': {
+    it: 'Le Grigliate',
+    en: 'Grills',
+    ar: 'المشويات',
+    fr: 'Les Grillades',
+  },
+  'grigliate-desc-page': {
+    it: 'Carni alla griglia e specialità italiane',
+    en: 'Grilled meats and Italian specialties',
+    ar: 'لحوم مشوية وتخصصات إيطالية',
+    fr: 'Viandes grillées et spécialités italiennes',
+  },
+  'calabria-griglia': {
+    it: 'Calabria alla griglia',
+    en: 'Calabria on the Grill',
+    ar: 'كالابريا على الشواية',
+    fr: 'Calabre sur le Grill',
+  },
+  'calabria-griglia-desc': {
+    it: 'salsiccia € 8 a pz, hamburger € 8 a pz, bombette € 3 a pz, costata nero di suino € 10',
+    en: 'sausage €8 each, hamburger €8 each, bombette €3 each, pork rib €10',
+    ar: 'سجق 8€ للقطعة، همبرغر 8€ للقطعة، بومبيت 3€ للقطعة، ضلع خنزير 10€',
+    fr: 'saucisse 8€ pièce, hamburger 8€ pièce, bombette 3€ pièce, côte de porc 10€',
+  },
+  'caciocavallo-griglia': {
+    it: 'Caciocavallo alla griglia',
+    en: 'Grilled Caciocavallo',
+    ar: 'كاتشوكافالو مشوي',
+    fr: 'Caciocavallo Grillé',
+  },
+  'caciocavallo-griglia-desc': {
+    it: 'caciocavallo, misticanza e olio al tartufo',
+    en: 'caciocavallo, mixed greens and truffle oil',
+    ar: 'كاتشوكافالو، خضر مشكلة وزيت كمأ',
+    fr: 'caciocavallo, salade composée et huile à la truffe',
+  },
+  'fiorentina': {
+    it: 'Fiorentina',
+    en: 'Fiorentina Steak',
+    ar: 'ستيك فيورنتينا',
+    fr: 'Fiorentina',
+  },
+  'fiorentina-desc': {
+    it: 'al Kg',
+    en: 'per Kg',
+    ar: 'للكيلو',
+    fr: 'au Kg',
+  },
+  'entrecote': {
+    it: 'Entrecôte',
+    en: 'Entrecôte',
+    ar: 'أنتريكوت',
+    fr: 'Entrecôte',
+  },
+  'entrecote-desc': {
+    it: '',
+    en: '',
+    ar: '',
+    fr: '',
+  },
+  'tomahawk': {
+    it: 'Tomahawk',
+    en: 'Tomahawk',
+    ar: 'توماهوك',
+    fr: 'Tomahawk',
+  },
+  'tomahawk-desc': {
+    it: 'al kg',
+    en: 'per kg',
+    ar: 'للكيلو',
+    fr: 'au kg',
+  },
+  'lombata-irlandese': {
+    it: 'Lombata irlandese',
+    en: 'Irish Loin',
+    ar: 'لحم خاصرة أيرلندي',
+    fr: 'Lombat Irlandaise',
+  },
+  'lombata-irlandese-desc': {
+    it: 'al kg',
+    en: 'per kg',
+    ar: 'للكيلو',
+    fr: 'au kg',
+  },
+  'picagna': {
+    it: 'Picagna',
+    en: 'Picagna',
+    ar: 'بيكانيا',
+    fr: 'Picagna',
+  },
+  'picagna-desc': {
+    it: '',
+    en: '',
+    ar: '',
+    fr: '',
+  },
+  'ribeye-entrecote': {
+    it: 'Ribaye entrecôte',
+    en: 'Ribeye Entrecôte',
+    ar: 'ريب آي أنتريكوت',
+    fr: 'Ribeye Entrecôte',
+  },
+  'ribeye-entrecote-desc': {
+    it: '',
+    en: '',
+    ar: '',
+    fr: '',
+  },
+
+  // Contorni Page
+  'contorni-title': {
+    it: 'I Contorni',
+    en: 'Side Dishes',
+    ar: 'الأطباق الجانبية',
+    fr: 'Les Accompagnements',
+  },
+  'contorni-desc-page': {
+    it: 'Contorni freschi e tradizionali',
+    en: 'Fresh and traditional side dishes',
+    ar: 'أطباق جانبية طازجة وتقليدية',
+    fr: 'Accompagnements frais et traditionnels',
+  },
+  'insalata-mista': {
+    it: 'Insalata mista',
+    en: 'Mixed Salad',
+    ar: 'سلطة مشكلة',
+    fr: 'Salade Composée',
+  },
+  'insalata-mista-desc': {
+    it: 'lattuga, radicchio, rucola, pomodorini, carote, meloncelle',
+    en: 'lettuce, radicchio, arugula, cherry tomatoes, carrots, pickled vegetables',
+    ar: 'خس، راديكيو، جرجير، طماطم كرزية، جزر، مخللات',
+    fr: 'laitue, radicchio, roquette, tomates cerises, carottes, légumes marinés',
+  },
+  'patate-forno': {
+    it: 'Patate al forno',
+    en: 'Baked Potatoes',
+    ar: 'بطاطس فرن',
+    fr: 'Pommes de Terre au Four',
+  },
+  'patate-forno-desc': {
+    it: 'patate e rosmarino',
+    en: 'potatoes and rosemary',
+    ar: 'بطاطس وإكليل الجبل',
+    fr: 'pommes de terre et romarin',
+  },
+  'patate-fritte': {
+    it: 'Patate fritte',
+    en: 'French Fries',
+    ar: 'بطاطس مقلية',
+    fr: 'Frites',
+  },
+  'patate-fritte-desc': {
+    it: '',
+    en: '',
+    ar: '',
+    fr: '',
+  },
+  'verdure-stagione': {
+    it: 'Verdure di stagione',
+    en: 'Seasonal Vegetables',
+    ar: 'خضروات موسمية',
+    fr: 'Légumes de Saison',
+  },
+  'verdure-stagione-desc': {
+    it: '',
+    en: '',
+    ar: '',
+    fr: '',
+  },
+  'patate-mblacchiuse': {
+    it: 'Patate "mblacchiuse"',
+    en: '"Mblacchiuse" Potatoes',
+    ar: 'بطاطس "مبلاكّيوز"',
+    fr: 'Pommes de Terre "Mblacchiuse"',
+  },
+  'patate-mblacchiuse-desc': {
+    it: 'peperoni e patate fritti',
+    en: 'fried peppers and potatoes',
+    ar: 'فلفل وبطاطس مقلية',
+    fr: 'poivrons et pommes de terre frits',
+  },
+
+  // Baby Menu Page
+  'baby-title': {
+    it: 'Baby Menu',
+    en: 'Baby Menu',
+    ar: 'قائمة الأطفال',
+    fr: 'Menu Enfant',
+  },
+  'baby-desc-page': {
+    it: 'Piatti dedicati ai più piccoli',
+    en: 'Dishes dedicated to the little ones',
+    ar: 'أطباق مخصصة للصغار',
+    fr: 'Plats dédiés aux plus petits',
+  },
+  'pasta-sugo': {
+    it: 'Pasta al sugo',
+    en: 'Pasta with Tomato Sauce',
+    ar: 'باستا بصلصة الطماطم',
+    fr: 'Pâtes à la Sauce Tomate',
+  },
+  'pasta-sugo-desc': {
+    it: '',
+    en: '',
+    ar: '',
+    fr: '',
+  },
+  'baby-hamburger': {
+    it: 'Baby Hamburger',
+    en: 'Baby Hamburger',
+    ar: 'همبرغر أطفال',
+    fr: 'Baby Hamburger',
+  },
+  'baby-hamburger-desc': {
+    it: 'hamburger di pollo',
+    en: 'chicken hamburger',
+    ar: 'همبرغر دجاج',
+    fr: 'hamburger de poulet',
+  },
+
+  // Special/NotFound pages
+  'notfound-title': {
+    it: 'Pagina non trovata',
+    en: 'Page Not Found',
+    ar: 'الصفحة غير موجودة',
+    fr: 'Page Non Trouvée',
+  },
+  'notfound-desc': {
+    it: 'La pagina che stai cercando non esiste.',
+    en: 'The page you are looking for does not exist.',
+    ar: 'الصفحة التي تبحث عنها غير موجودة.',
+    fr: 'La page que vous cherchez n\'existe pas.',
+  },
+  'notfound-back': {
+    it: 'Torna alla Home',
+    en: 'Back to Home',
+    ar: 'العودة للرئيسية',
+    fr: 'Retour à l\'Accueil',
+  },
 };
 
-export function t(key: string, language: 'en' | 'ar' | 'it' | 'fr'): string {
-  return translations[language][key as keyof typeof translations['en']] || key;
+export function t(key: string, lang: Language): string {
+  if (!translations[key]) {
+    console.warn(`Translation key "${key}" not found`);
+    return key;
+  }
+  return translations[key][lang] || translations[key]['en'] || key;
 }
